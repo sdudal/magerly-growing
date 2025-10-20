@@ -1,0 +1,61 @@
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="twitterBgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#twitterBgGradient)"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="120" cy="120" r="100" fill="#ffffff" opacity="0.08"/>
+  <circle cx="1050" cy="480" r="80" fill="#fbbf24" opacity="0.15"/>
+  
+  <!-- Main Content -->
+  <g transform="translate(100, 150)">
+    <!-- Icon -->
+    <circle cx="80" cy="80" r="70" fill="#fbbf24"/>
+    <text x="80" y="110" font-size="80" font-family="Arial, sans-serif" text-anchor="middle">👶</text>
+    
+    <!-- Text Content -->
+    <text x="200" y="70" font-size="80" font-family="Arial, sans-serif" font-weight="bold" fill="#ffffff">
+      Magerly
+    </text>
+    
+    <text x="200" y="130" font-size="36" font-family="Arial, sans-serif" fill="#e0e7ff" font-weight="500">
+      Track Your Baby's Milestones
+    </text>
+    
+    <text x="200" y="190" font-size="28" font-family="Arial, sans-serif" fill="#dbeafe">
+      Expert-backed growth tracking for new parents
+    </text>
+    
+    <!-- Stats Row -->
+    <g transform="translate(200, 240)">
+      <rect x="0" y="0" width="200" height="60" rx="10" fill="#ffffff" opacity="0.15"/>
+      <text x="100" y="25" font-size="20" font-family="Arial, sans-serif" fill="#fbbf24" text-anchor="middle" font-weight="600">
+        ⭐ 4.8 Rating
+      </text>
+      <text x="100" y="50" font-size="18" font-family="Arial, sans-serif" fill="#e0e7ff" text-anchor="middle">
+        10,000+ Families
+      </text>
+      
+      <rect x="230" y="0" width="200" height="60" rx="10" fill="#10b981"/>
+      <text x="330" y="28" font-size="22" font-family="Arial, sans-serif" fill="#ffffff" text-anchor="middle" font-weight="bold">
+        FREE
+      </text>
+      <text x="330" y="50" font-size="16" font-family="Arial, sans-serif" fill="#d1fae5" text-anchor="middle">
+        Download Now
+      </text>
+    </g>
+  </g>
+  
+  <!-- Bottom Text -->
+  <text x="600" y="570" font-size="20" font-family="Arial, sans-serif" fill="#e0e7ff" text-anchor="middle">
+    Available on iOS & Android
+  </text>
+</svg>
+

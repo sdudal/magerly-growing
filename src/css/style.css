@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: theme('colors.gray.900');
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  /* Skip link for accessibility */
+  .skip-link {
+    @apply absolute -top-10 left-4 z-50 bg-primary-600 text-white px-4 py-2 rounded opacity-0 pointer-events-none;
+  }
+  
+  .skip-link:focus {
+    @apply top-4 opacity-100 pointer-events-auto;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-primary-600 font-semibold py-3 px-6 rounded-lg border-2 border-primary-600;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6;
+  }
+  
+  .hero-gradient {
+    background: theme('colors.primary.600');
+  }
+  
+  /* Header sticky behavior */
+  
+  .header-scrolled {
+    @apply bg-white shadow-lg;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+/* Custom utility classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* CTA Button Styling */
+  .download-btn {
+    @apply cursor-pointer;
+  }
+  
+  /* App Store Button Styling */
+  .ios-btn {
+    background: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .android-btn {
+    background: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "ParameterKey": "ProjectName",
+    "ParameterValue": "magerly"
+  },
+  {
+    "ParameterKey": "DomainName",
+    "ParameterValue": "magerly.com"
+  },
+  {
+    "ParameterKey": "SubdomainName",
+    "ParameterValue": ""
+  },
+  {
+    "ParameterKey": "AlertEmail",
+    "ParameterValue": "magerly.growing.together@gmail.com"
+  },
+  {
+    "ParameterKey": "SSLCertificateArn",
+    "ParameterValue": "arn:aws:acm:us-east-1:174202417435:certificate/b45d16c7-32a0-4320-8e80-d615c2d2a4d0"
+  },
+  {
+    "ParameterKey": "HostedZoneId",
+    "ParameterValue": "Z07707071Q6JINRBN0I95"
+  }
+]
