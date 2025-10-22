@@ -2,6 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script>
+    // Language detection and redirect
+    (function() {
+
+        // Check if already on a language-specific path
+        const currentPath = window.location.pathname;
+        if (currentPath.startsWith('/ru/') || currentPath.startsWith('/fr/') || 
+            currentPath.startsWith('/de/') || currentPath.startsWith('/es/') || 
+            currentPath.startsWith('/tr/') || currentPath.startsWith('/pl/')) {
+          return; // Already on language-specific path
+        }
+
+      // Check if user has already selected a language (stored in localStorage)
+      const langCode = localStorage.getItem('magerly_language');
+      if (langCode ) {
+      } else {
+        // Get browser language
+        const browserLang = navigator.language || navigator.userLanguage;
+        const langCode = browserLang.split('-')[0].toLowerCase();
+      }
+      // Map of supported languages to their paths
+      const languageMap = {
+        'ru': '/ru/index.html',           // Russian
+        // 'fr': '/fr/',        // French (not yet implemented)
+        // 'de': '/de/',        // German (not yet implemented)
+        // 'es': '/es/',        // Spanish (not yet implemented)
+        // 'tr': '/tr/',        // Turkish (not yet implemented)
+        // 'pl': '/pl/',        // Polish (not yet implemented)
+        'en': '/'               // English (default)
+      };
+      
+      // Redirect to appropriate language if supported
+      console.log(languageMap[langCode])
+      console.log(currentPath)
+      if (languageMap[langCode] && languageMap[langCode] !== currentPath) {
+        const newPath = languageMap[langCode];
+        window.location.href = newPath;
+      }
+      
+      // If we stay on this page, save the language preference
+      if (currentPath === '/' || currentPath === '/index.html') {
+        localStorage.setItem('magerly_language', 'en');
+      }
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magerly - Your Baby's Growth Companion</title>
   
@@ -29,7 +74,7 @@
   <meta property="twitter:title" content="Magerly - Your Baby's Growth Companion">
   <meta property="twitter:description" content="Track your baby's growth milestones with Magerly - the intelligent mobile app designed for new parents.">
   <meta property="twitter:image" content="https://magerly.com/twitter-card.svg">
-  <meta property="twitter:image:alt" content="Magerly baby tracking app - 300+ parents, 6 languages">
+  <meta property="twitter:image:alt" content="Magerly baby tracking app - 300+ parents, 7 languages">
   <meta name="twitter:creator" content="@magerly">
 
   <!-- Google Analytics 4 -->
@@ -45,22 +90,85 @@
   </script>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e11d48'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z'/%3E%3C/svg%3E">
-  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%23e11d48'/%3E%3Cpath d='M90 30C69.01 30 52 47.01 52 68s17.01 38 38 38 38-17.01 38-38-17.01-38-38-38zm-12 55l-18-18 5.66-5.66L90 85.68l22.34-22.34L118 69l-28 28-12-12z' fill='white'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" href="./assets/images/icon.png">
+  <link rel="apple-touch-icon" href="./assets/images/icon.png">
   
   <!-- Preconnect to external domains -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
   <!-- Preload critical resources -->
-  <link rel="preload" href="./css/style.css" as="style">
   <link rel="preload" href="./js/main.js" as="script">
+  <link rel="preload" href="./assets/images/bg-1.png" as="image" fetchpriority="high">
   
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Preload critical font files -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin>
   
-  <!-- Styles -->
-  <link rel="stylesheet" href="./css/style.css">
+  <!-- Load CSS asynchronously to avoid blocking render -->
+  <link rel="preload" href="./css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="./css/style.css"></noscript>
+  
+  <!-- Fonts - Load asynchronously to avoid blocking -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+  
+  <!-- Critical inline CSS for above-the-fold content -->
+  <style>
+    /* Critical styles for initial render */
+    *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}
+    html{line-height:1.5;-webkit-text-size-adjust:100%;tab-size:4;font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;scroll-behavior:smooth}
+    body{margin:0;line-height:1.6;color:#111827;font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}
+    h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:600;line-height:1.2}
+    a{color:inherit;text-decoration:inherit}
+    button{font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0;background-color:transparent;background-image:none;cursor:pointer}
+    img,svg{display:block;vertical-align:middle;max-width:100%;height:auto}
+    .hero-gradient{background:#2563eb}
+    .text-white{color:#fff}
+    .text-primary-100{color:#dbeafe}
+    .text-yellow-300{color:#fde047}
+    .text-primary-600{color:#2563eb}
+    .bg-white{background-color:#fff}
+    .bg-black{background-color:#000}
+    .font-bold{font-weight:700}
+    .font-semibold{font-weight:600}
+    .font-light{font-weight:300}
+    .text-4xl{font-size:2.25rem;line-height:2.5rem}
+    .text-xl{font-size:1.25rem;line-height:1.75rem}
+    .text-lg{font-size:1.125rem;line-height:1.75rem}
+    .text-sm{font-size:.875rem;line-height:1.25rem}
+    .text-xs{font-size:.75rem;line-height:1rem}
+    .mb-6{margin-bottom:1.5rem}
+    .mb-8{margin-bottom:2rem}
+    .pt-24{padding-top:6rem}
+    .pb-16{padding-bottom:4rem}
+    .px-4{padding-left:1rem;padding-right:1rem}
+    .py-3{padding-top:.75rem;padding-bottom:.75rem}
+    .px-6{padding-left:1.5rem;padding-right:1.5rem}
+    .px-8{padding-left:2rem;padding-right:2rem}
+    .rounded-lg{border-radius:.5rem}
+    .rounded-xl{border-radius:.75rem}
+    .shadow-lg{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
+    .flex{display:flex}
+    .hidden{display:none}
+    .relative{position:relative}
+    .absolute{position:absolute}
+    .z-10{z-index:10}
+    .overflow-hidden{overflow:hidden}
+    .items-center{align-items:center}
+    .justify-center{justify-content:center}
+    .space-x-2>:not([hidden])~:not([hidden]){margin-left:.5rem}
+    .space-x-3>:not([hidden])~:not([hidden]){margin-left:.75rem}
+    .space-x-4>:not([hidden])~:not([hidden]){margin-left:1rem}
+    .space-x-8>:not([hidden])~:not([hidden]){margin-left:2rem}
+    .gap-4{gap:1rem}
+    .gap-12{gap:3rem}
+    .text-center{text-align:center}
+    .leading-tight{line-height:1.25}
+    .leading-relaxed{line-height:1.625}
+    @media(min-width:640px){.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}
+    @media(min-width:768px){.md\:flex{display:flex}.md\:w-auto{width:auto}.md\:bottom-0{bottom:0}.md\:right-0{right:0}.md\:top-auto{top:auto}.md\:left-auto{left:auto}.md\:translate-x-0{transform:translateX(0)}}
+    @media(min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:text-6xl{font-size:3.75rem;line-height:1}.lg\:text-2xl{font-size:1.5rem;line-height:2rem}.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:text-left{text-align:left}.lg\:justify-start{justify-content:flex-start}}
+  </style>
   
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -71,7 +179,7 @@
         "@type": "Organization",
         "name": "Magerly",
         "url": "https://magerly.com",
-        "logo": "https://magerly.com/assets/images/logo.png",
+        "logo": "https://magerly.com/assets/images/icon.png",
         "description": "Baby development tracking app for new parents",
         "founder": {
           "@type": "Person",
@@ -121,18 +229,50 @@
           },
           {
             "@type": "Question",
-            "name": "Can I share data with my pediatrician?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Absolutely! Magerly allows you to export growth charts and milestone reports in PDF format, making it easy to share with your healthcare provider during appointments."
-            }
-          },
-          {
-            "@type": "Question",
             "name": "Is my baby's data secure and private?",
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Yes, we take privacy seriously. All collected data is stored only on your device - we never store or transfer your data to external servers. We use AdMob for ads, but your baby's information stays with you. We never share personal information with third parties without your explicit consent."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use Magerly if my baby is already a few months old?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Definitely. Just set your baby's birth date and Magerly will pick up right where you are, giving tips and support based on your child's current stage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is Magerly different from other parenting apps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Unlike generic apps, Magerly offers calm, focused guidance. It doesn't overload you - just the right advice at the right moment, designed to gently support your journey through baby's early years."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Magerly replace visits to a pediatrician?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No - Magerly is a supportive tool, not a medical app. It offers daily tips and reminders based on typical development but should always be used alongside professional healthcare."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Magerly suitable for first-time parents?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely! Magerly was created with first-time parents in mind. It guides you step by step with clear, daily tips and easy tasks, without overwhelming you with too much information."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What kind of advice does the app offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You'll receive expert-backed, science-based advice tailored to your baby's exact age - from bonding and play ideas to motor skills and sleep tips. Everything is short, sweet, and practical."
             }
           }
         ]
@@ -151,9 +291,9 @@
   <header>
     <nav class="bg-white shadow-sm fixed w-full top-0 z-50 header-sticky" role="navigation" aria-label="Main navigation">
     <div class="container-max">
-      <div class="flex justify-between items-center py-4">
+      <div class="flex justify-between items-center py-4 px-4 md:px-0">
         <a href="/" class="flex items-center space-x-2" aria-label="Magerly Homepage">
-          <span class="text-2xl" role="img" aria-label="Baby milestone icon">👶</span>
+          <img src="./assets/images/icon.png" alt="Magerly Logo" class="w-8 h-8 rounded-full">
           <span class="text-xl font-bold text-primary-600">Magerly</span>
         </a>
         
@@ -166,8 +306,37 @@
           <a href="#faq" class="text-gray-600">FAQ</a>
         </div>
         
+        <div class="hidden md:flex items-center space-x-4">
+          <!-- Language Selector -->
+          <div class="relative" id="language-selector">
+            <button class="flex items-center space-x-2 text-gray-600 hover:text-gray-900 px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors" 
+                    aria-label="Select language"
+                    id="language-toggle">
+              <img src="./assets/images/flags/english-flag.png" alt="English" class="w-5 h-5 rounded">
+              <span class="hidden sm:inline text-sm font-medium">English</span>
+            </button>
+            
+            <!-- Language Dropdown -->
+            <div class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg hidden z-50" id="language-dropdown">
+              <a href="/" class="flex items-center space-x-3 px-4 py-2 text-gray-700 hover:bg-primary-50 first:rounded-t-lg transition-colors">
+                <img src="./assets/images/flags/english-flag.png" alt="English" class="w-5 h-5 rounded">
+                <span>English</span>
+              </a>
+              <a href="/ru/index.html" class="flex items-center space-x-3 px-4 py-2 text-gray-700 hover:bg-primary-50 last:rounded-b-lg transition-colors">
+                <img src="./assets/images/flags/russian-flag.png" alt="Русский" class="w-5 h-5 rounded">
+                <span>Русский</span>
+              </a>
+            </div>
+        </div>
+        
         <button data-download-button data-location="header" class="btn-primary">
-          Download App
+            Download
+          </button>
+        </div>
+        
+        <!-- Mobile Download Button -->
+        <button data-download-button data-location="mobile-header" class="md:hidden btn-primary px-6 py-2.5">
+          Download
         </button>
         
         <!-- Mobile menu button -->
@@ -200,24 +369,48 @@
           </svg>
         </button>
       </div>
-      <nav class="space-y-4" role="navigation" aria-label="Mobile navigation">
-        <a href="#features" class="block py-2 text-gray-600">Features</a>
-        <a href="#how-it-works" class="block py-2 text-gray-600">How It Works</a>
-        <a href="#app-screenshots" class="block py-2 text-gray-600">App Experience</a>
-        <a href="#testimonials" class="block py-2 text-gray-600">Reviews</a>
-        <a href="#pricing" class="block py-2 text-gray-600">Pricing</a>
-        <a href="#faq" class="block py-2 text-gray-600">FAQ</a>
-        <a href="./privacy.html" class="block py-2 text-gray-600">Privacy</a>
-        <a href="./terms.html" class="block py-2 text-gray-600">Terms</a>
+      <nav class="space-y-4 border-b border-gray-200 pb-4 mb-4" role="navigation" aria-label="Mobile navigation">
+        <a href="#features" class="block py-2 text-gray-600 hover:text-primary-600">Features</a>
+        <a href="#how-it-works" class="block py-2 text-gray-600 hover:text-primary-600">How It Works</a>
+        <a href="#app-screenshots" class="block py-2 text-gray-600 hover:text-primary-600">App Experience</a>
+        <a href="#testimonials" class="block py-2 text-gray-600 hover:text-primary-600">Reviews</a>
+        <a href="#pricing" class="block py-2 text-gray-600 hover:text-primary-600">Pricing</a>
+        <a href="#faq" class="block py-2 text-gray-600 hover:text-primary-600">FAQ</a>
       </nav>
+      
+      <!-- Mobile Menu - Languages -->
+      <div class="mb-4 pb-4 border-b border-gray-200">
+        <h4 class="text-xs font-semibold text-gray-500 uppercase mb-2">Language</h4>
+        <div class="space-y-2">
+          <a href="/" class="flex items-center space-x-2 py-2 text-primary-600 font-semibold">
+            <img src="./assets/images/flags/english-flag.png" alt="English" class="w-5 h-5 rounded">
+            <span>English</span>
+          </a>
+          <a href="/ru/index.html" class="flex items-center space-x-2 py-2 text-gray-600 hover:text-primary-600">
+            <img src="./assets/images/flags/russian-flag.png" alt="Русский" class="w-5 h-5 rounded">
+            <span>Русский</span>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu - Legal -->
+      <div class="space-y-2">
+        <h4 class="text-xs font-semibold text-gray-500 uppercase mb-2">Legal</h4>
+        <a href="./privacy.html" class="block py-2 text-sm text-gray-600 hover:text-primary-600">Privacy Policy</a>
+        <a href="./terms.html" class="block py-2 text-sm text-gray-600 hover:text-primary-600">Terms of Service</a>
+      </div>
     </div>
   </div>
 
   <!-- Main Content -->
   <main id="main-content">
     <!-- Hero Section -->
-    <section class="hero-gradient text-white pt-24 pb-16" aria-labelledby="hero-heading">
-    <div class="container-max section-padding">
+    <section class="hero-gradient text-white pt-24 pb-16 relative overflow-hidden" aria-labelledby="hero-heading">
+    <!-- Background Image -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 md:top-auto md:left-auto md:bottom-0 md:right-0 md:translate-x-0 opacity-10 pointer-events-none w-full md:w-auto" style="height: 50%;">
+      <img src="./assets/images/bg-1.png" alt="" class="w-full h-full object-cover object-top md:object-right-bottom" fetchpriority="high" decoding="async">
+    </div>
+    <div class="container-max section-padding relative z-10">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div class="text-center lg:text-left">
           <h1 id="hero-heading" class="text-4xl lg:text-6xl font-bold mb-6">
@@ -289,14 +482,14 @@
             </button>
           </div>
           
-          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6 text-primary-200">
-            <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-full">
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6 text-white">
+            <div class="flex items-center space-x-2 bg-white/20 px-4 py-2 rounded-full">
               <span class="text-lg">👨‍👩‍👧‍👦</span>
-              <span class="text-sm font-medium">300+ parents worldwide</span>
+              <span class="text-sm font-semibold">300+ parents worldwide</span>
             </div>
-            <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-full">
+            <div class="flex items-center space-x-2 bg-white/20 px-4 py-2 rounded-full">
               <span class="text-lg">🌐</span>
-              <span class="text-sm font-medium">6 languages supported</span>
+              <span class="text-sm font-semibold">7 languages supported</span>
             </div>
           </div>
         </div>
@@ -558,56 +751,52 @@
           </p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Languages Section -->
-  <section class="section-padding bg-white">
-    <div class="container-max">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-          Available in Your Language
-        </h2>
-        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-          Magerly is available in 6 languages to support families worldwide
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-        <div class="flex items-center justify-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl hover:shadow-lg transition-all">
-          <div class="text-center">
-            <img src="./assets/images/flags/english-flag.png" alt="England flag" class="w-16 h-16 mx-auto mb-3 object-cover rounded-lg">
-            <h3 class="font-semibold text-gray-900 text-lg">English</h3>
+      
+      <!-- Language Flags -->
+      <div class="mt-16 text-center">
+        <p class="text-xl text-gray-600 mb-6">Available in 7 languages</p>
+        <div class="flex justify-center items-center gap-4 flex-wrap">
+          <div class="relative group">
+            <img src="./assets/images/flags/english-flag.png" alt="English" class="w-8 h-8 md:w-12 md:h-12 rounded shadow-sm hover:scale-110 transition-transform cursor-pointer">
+            <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+              English
+            </div>
           </div>
-        </div>
-        <div class="flex items-center justify-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl hover:shadow-lg transition-all">
-          <div class="text-center">
-            <img src="./assets/images/flags/french-flag.png" alt="France flag" class="w-16 h-16 mx-auto mb-3 object-cover rounded-lg">
-            <h3 class="font-semibold text-gray-900 text-lg">Français</h3>
+          <div class="relative group">
+            <img src="./assets/images/flags/russian-flag.png" alt="Русский" class="w-8 h-8 md:w-12 md:h-12 rounded shadow-sm hover:scale-110 transition-transform cursor-pointer">
+            <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+              Русский
+            </div>
           </div>
-        </div>
-        <div class="flex items-center justify-center p-6 bg-gradient-to-br from-red-50 to-red-100 rounded-xl hover:shadow-lg transition-all">
-          <div class="text-center">
-            <img src="./assets/images/flags/german-flag.png" alt="Germany flag" class="w-16 h-16 mx-auto mb-3 object-cover rounded-lg">
-            <h3 class="font-semibold text-gray-900 text-lg">Deutsch</h3>
+          <div class="relative group">
+            <img src="./assets/images/flags/french-flag.png" alt="Français" class="w-8 h-8 md:w-12 md:h-12 rounded shadow-sm hover:scale-110 transition-transform cursor-pointer">
+            <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+              Français
+            </div>
           </div>
-        </div>
-        <div class="flex items-center justify-center p-6 bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl hover:shadow-lg transition-all">
-          <div class="text-center">
-            <img src="./assets/images/flags/spanish-flag.png" alt="Spain flag" class="w-16 h-16 mx-auto mb-3 object-cover rounded-lg">
-            <h3 class="font-semibold text-gray-900 text-lg">Español</h3>
+          <div class="relative group">
+            <img src="./assets/images/flags/german-flag.png" alt="Deutsch" class="w-8 h-8 md:w-12 md:h-12 rounded shadow-sm hover:scale-110 transition-transform cursor-pointer">
+            <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+              Deutsch
+            </div>
           </div>
-        </div>
-        <div class="flex items-center justify-center p-6 bg-gradient-to-br from-red-50 to-red-100 rounded-xl hover:shadow-lg transition-all">
-          <div class="text-center">
-            <img src="./assets/images/flags/turkish-flag.png" alt="Turkey flag" class="w-16 h-16 mx-auto mb-3 object-cover rounded-lg">
-            <h3 class="font-semibold text-gray-900 text-lg">Türkçe</h3>
+          <div class="relative group">
+            <img src="./assets/images/flags/spanish-flag.png" alt="Español" class="w-8 h-8 md:w-12 md:h-12 rounded shadow-sm hover:scale-110 transition-transform cursor-pointer">
+            <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+              Español
+            </div>
           </div>
-        </div>
-        <div class="flex items-center justify-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl hover:shadow-lg transition-all">
-          <div class="text-center">
-            <img src="./assets/images/flags/polish-flag.png" alt="Poland flag" class="w-16 h-16 mx-auto mb-3 object-cover rounded-lg">
-            <h3 class="font-semibold text-gray-900 text-lg">Polski</h3>
+          <div class="relative group">
+            <img src="./assets/images/flags/turkish-flag.png" alt="Türkçe" class="w-8 h-8 md:w-12 md:h-12 rounded shadow-sm hover:scale-110 transition-transform cursor-pointer">
+            <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+              Türkçe
+            </div>
+          </div>
+          <div class="relative group">
+            <img src="./assets/images/flags/polish-flag.png" alt="Polski" class="w-8 h-8 md:w-12 md:h-12 rounded shadow-sm hover:scale-110 transition-transform cursor-pointer">
+            <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+              Polski
+            </div>
           </div>
         </div>
       </div>
@@ -913,7 +1102,7 @@
         </p>
       </div>
       
-      <div class="max-w-3xl mx-auto space-y-4">
+      <div class="grid lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
         <div class="card">
           <button class="faq-question w-full text-left flex justify-between items-center py-2" data-target="faq-1">
             <span class="font-semibold">Is Magerly free to use?</span>
@@ -935,22 +1124,62 @@
         </div>
         
         <div class="card">
-          <button class="faq-question w-full text-left flex justify-between items-center py-2" data-target="faq-3">
-            <span class="font-semibold">Can I share data with my pediatrician?</span>
-            <span class="faq-icon">▼</span>
-          </button>
-          <div id="faq-3" class="faq-answer hidden pt-4 text-gray-600">
-            Absolutely! Magerly allows you to export growth charts and milestone reports in PDF format, making it easy to share with your healthcare provider during appointments.
-          </div>
-        </div>
-        
-        <div class="card">
           <button class="faq-question w-full text-left flex justify-between items-center py-2" data-target="faq-4">
             <span class="font-semibold">Is my baby's data secure and private?</span>
             <span class="faq-icon">▼</span>
           </button>
           <div id="faq-4" class="faq-answer hidden pt-4 text-gray-600">
             Yes, we take privacy seriously. All collected data is stored only on your device - we never store or transfer your data to external servers. We use AdMob for ads, but your baby's information stays with you. We never share personal information with third parties without your explicit consent.
+          </div>
+        </div>
+        
+        <div class="card">
+          <button class="faq-question w-full text-left flex justify-between items-center py-2" data-target="faq-5">
+            <span class="font-semibold">Can I use Magerly if my baby is already a few months old?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div id="faq-5" class="faq-answer hidden pt-4 text-gray-600">
+            Definitely. Just set your baby's birth date and Magerly will pick up right where you are, giving tips and support based on your child's current stage.
+          </div>
+        </div>
+        
+        <div class="card">
+          <button class="faq-question w-full text-left flex justify-between items-center py-2" data-target="faq-6">
+            <span class="font-semibold">How is Magerly different from other parenting apps?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div id="faq-6" class="faq-answer hidden pt-4 text-gray-600">
+            Unlike generic apps, Magerly offers calm, focused guidance. It doesn't overload you - just the right advice at the right moment, designed to gently support your journey through baby's early years.
+          </div>
+        </div>
+        
+        <div class="card">
+          <button class="faq-question w-full text-left flex justify-between items-center py-2" data-target="faq-7">
+            <span class="font-semibold">Does Magerly replace visits to a pediatrician?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div id="faq-7" class="faq-answer hidden pt-4 text-gray-600">
+            No - Magerly is a supportive tool, not a medical app. It offers daily tips and reminders based on typical development but should always be used alongside professional healthcare.
+          </div>
+        </div>
+        
+        <div class="card">
+          <button class="faq-question w-full text-left flex justify-between items-center py-2" data-target="faq-8">
+            <span class="font-semibold">Is Magerly suitable for first-time parents?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div id="faq-8" class="faq-answer hidden pt-4 text-gray-600">
+            Absolutely! Magerly was created with first-time parents in mind. It guides you step by step with clear, daily tips and easy tasks, without overwhelming you with too much information.
+          </div>
+        </div>
+        
+        <div class="card">
+          <button class="faq-question w-full text-left flex justify-between items-center py-2" data-target="faq-9">
+            <span class="font-semibold">What kind of advice does the app offer?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div id="faq-9" class="faq-answer hidden pt-4 text-gray-600">
+            You'll receive expert-backed, science-based advice tailored to your baby's exact age - from bonding and play ideas to motor skills and sleep tips. Everything is short, sweet, and practical.
           </div>
         </div>
       </div>
@@ -963,7 +1192,7 @@
       <h2 class="text-3xl lg:text-4xl font-bold mb-4">
         Ready to Start Your Journey?
       </h2>
-      <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+      <p class="text-xl text-white mb-8 max-w-2xl mx-auto">
         Join 300+ parents who trust Magerly to track their baby's growth and celebrate every milestone.
       </p>
       
@@ -985,7 +1214,7 @@
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
         <div>
           <div class="flex items-center space-x-2 mb-4">
-            <span class="text-2xl" role="img" aria-label="Baby milestone icon">👶</span>
+            <img src="./assets/images/icon.png" alt="Magerly Logo" class="w-8 h-8 rounded-full">
             <span class="text-xl font-bold">Magerly</span>
           </div>
           <p class="text-gray-400 mb-4">
@@ -993,14 +1222,14 @@
           </p>
           <div class="flex space-x-4">
             <a href="https://www.facebook.com/groups/981598013945421" 
-               class="text-gray-400" 
+               class="text-gray-400 hover:text-white transition-colors" 
                aria-label="Join Magerly Facebook Community Group"
                target="_blank" 
                rel="noopener noreferrer">
               <span role="img" aria-hidden="true">📘</span>
             </a>
             <a href="https://www.instagram.com/magerlygrowingtogether" 
-               class="text-gray-400" 
+               class="text-gray-400 hover:text-white transition-colors" 
                aria-label="Follow @magerlygrowingtogether on Instagram"
                target="_blank" 
                rel="noopener noreferrer">
@@ -1012,19 +1241,27 @@
         <div>
           <h3 class="font-semibold mb-4">Product</h3>
           <ul class="space-y-2 text-gray-400">
-            <li><a href="#features" class="hover:text-white">Features</a></li>
-            <li><a href="#how-it-works" class="hover:text-white">How It Works</a></li>
-            <li><a href="#app-screenshots" class="hover:text-white">App Experience</a></li>
-            <li><a href="#pricing" class="hover:text-white">Pricing</a></li>
-            <li><a href="#faq" class="hover:text-white">FAQ</a></li>
+            <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
+            <li><a href="#how-it-works" class="hover:text-white transition-colors">How It Works</a></li>
+            <li><a href="#app-screenshots" class="hover:text-white transition-colors">App Experience</a></li>
+            <li><a href="#pricing" class="hover:text-white transition-colors">Pricing</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
           </ul>
         </div>
         
         <div>
           <h3 class="font-semibold mb-4">Legal</h3>
           <ul class="space-y-2 text-gray-400">
-            <li><a href="./privacy.html" class="hover:text-white">Privacy Policy</a></li>
-            <li><a href="./terms.html" class="hover:text-white">Terms of Service</a></li>
+            <li><a href="./privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="./terms.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="font-semibold mb-4">Languages</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="/" class="hover:text-white transition-colors">English</a></li>
+            <li><a href="/ru/index.html" class="hover:text-white transition-colors">Русский</a></li>
           </ul>
         </div>
       </div>
@@ -1082,7 +1319,36 @@
           mobileMenuOverlay.classList.add('hidden');
         }
       });
+
+      // Language selector functionality
+      const languageSelector = document.getElementById('language-selector');
+      const languageToggle = document.getElementById('language-toggle');
+      const languageDropdown = document.getElementById('language-dropdown');
+
+      languageToggle?.addEventListener('click', function() {
+        languageDropdown.classList.toggle('hidden');
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!languageSelector.contains(event.target) && !languageToggle.contains(event.target)) {
+          languageDropdown.classList.add('hidden');
+        }
+      });
+
+      // Save language preference when user clicks language links
+      document.querySelectorAll('a[href="/"], a[href="/ru/index.html"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href === '/') {
+            localStorage.setItem('magerly_language', 'en');
+          } else if (href.includes('/ru/')) {
+            localStorage.setItem('magerly_language', 'ru');
+          }
+        });
+      });
     });
   </script>
 </body>
 </html>
+

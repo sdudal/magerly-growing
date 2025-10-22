@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    // Language detection and redirect
+    (function() {
+      // Check if already on a language-specific path
+      const currentPath = window.location.pathname;
+      if (currentPath.startsWith('/ru/') || currentPath.startsWith('/en/')) {
+        return; // Already on language-specific path
+      }
+      
+      // Get browser language
+      const browserLang = navigator.language || navigator.userLanguage;
+      const langCode = browserLang.split('-')[0].toLowerCase();
+      
+      // Check if Russian and not on /ru path
+      if (langCode === 'ru' && !currentPath.includes('/ru')) {
+        const newPath = currentPath === '/' ? '/ru/' : '/ru' + currentPath;
+        window.location.href = newPath;
+      }
+    })();
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Условия использования — Magerly</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Условия использования приложения Magerly. Честные и понятные правила для родителей.">
+  <meta name="keywords" content="условия использования, пользовательское соглашение, правила приложения, Magerly">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://magerly.com/ru/terms.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://magerly.com/ru/terms.html">
+  <meta property="og:title" content="Условия использования — Magerly">
+  <meta property="og:description" content="Правила пользования приложением Magerly для родителей малышей.">
+  <meta property="og:image" content="https://magerly.com/og-preview.svg">
+  <meta property="og:image:alt" content="Magerly — приложение для развития ребенка">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Magerly">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://magerly.com/ru/terms.html">
+  <meta property="twitter:title" content="Условия использования — Magerly">
+  <meta property="twitter:description" content="Условия использования приложения Magerly: подписки, конфиденциальность, права и ответственность.">
+  <meta property="twitter:image" content="https://magerly.com/twitter-card.svg">
+  <meta property="twitter:image:alt" content="Magerly — приложение для родителей">
+  <meta name="twitter:creator" content="@magerly">
+  
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-27QDM88JLM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-27QDM88JLM', {
+      'anonymize_ip': true,
+      'cookie_flags': 'SameSite=None;Secure'
+    });
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/images/icon.png">
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <header>
+    <nav class="bg-white shadow-sm" role="navigation" aria-label="Main navigation">
+      <div class="container-max">
+        <div class="flex justify-between items-center py-4 px-4 md:px-0">
+          <a href="./index.html" class="flex items-center space-x-2 flex-shrink-0" aria-label="Magerly Homepage">
+            <img src="../assets/images/icon.png" alt="Baby milestone icon" class="w-8 h-8">
+            <span class="text-xl font-bold text-primary-600">Magerly</span>
+          </a>
+          
+          <a href="./index.html" class="text-primary-600 hover:text-primary-700 transition-colors text-sm md:text-base whitespace-nowrap" aria-label="Вернуться на главную">
+            ← На главную
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section-padding">
+    <div class="container-max max-w-4xl">
+      <div class="bg-white rounded-xl shadow-lg p-8 lg:p-12">
+        <header class="text-center mb-12">
+          <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Условия использования
+          </h1>
+          <p class="text-lg text-gray-600">
+            Дата вступления в силу: 14 апреля 2025
+          </p>
+        </header>
+
+        <div class="prose prose-lg max-w-none space-y-8">
+          <div class="bg-primary-50 p-6 rounded-lg mb-8">
+            <p class="text-gray-700 leading-relaxed">
+              Добро пожаловать в Magerly. Используя наше мобильное приложение, вы принимаете настоящие Условия. Если с чем‑то не согласны, пожалуйста, не используйте приложение.
+            </p>
+          </div>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">1. Обзор</h2>
+            <p class="text-gray-600 leading-relaxed">
+              Magerly — мобильное приложение с образовательной и развивающей поддержкой для родителей малышей. В приложении — ежедневные советы, недельные задачи и удобные инструменты отслеживания вех.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">2. Подписки и платежи</h2>
+            <p class="text-gray-600 leading-relaxed">
+              В премиум‑версии доступны дополнительные возможности по автопродаваемой подписке. Подписка продлевается автоматически, если ее не отменить минимум за 24 часа до окончания текущего периода. Управлять подпиской можно в настройках Apple ID или Google Play.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">3. Конфиденциальность</h2>
+            <p class="text-gray-600 leading-relaxed">
+              Мы заботимся о вашей приватности и данных малыша. Подробности — в разделe 
+              <a href="./privacy.html" class="text-primary-600 hover:text-primary-700 underline">Политика конфиденциальности</a>.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">4. Ответственность пользователя</h2>
+            <div class="space-y-4">
+              <p class="text-gray-600 leading-relaxed">
+                Используя приложение, вы подтверждаете, что:
+              </p>
+              <ul class="space-y-3 text-gray-600">
+                <li class="flex items-start"><span class="text-primary-600 mr-2">•</span><span>Применяете приложение только в законных целях</span></li>
+                <li class="flex items-start"><span class="text-primary-600 mr-2">•</span><span>Предоставляете точную информацию при необходимости</span></li>
+                <li class="flex items-start"><span class="text-primary-600 mr-2">•</span><span>Не пытаетесь взламывать или декомпилировать приложение</span></li>
+                <li class="flex items-start"><span class="text-primary-600 mr-2">•</span><span>Понимаете, что материалы носят информационный характер и не заменяют медицинскую консультацию</span></li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">5. Медицинский дисклеймер</h2>
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-lg">
+              <p class="text-gray-700 leading-relaxed">
+                <strong>Важно:</strong> Magerly — образовательный инструмент. Он не предназначен для диагностики, лечения или предотвращения заболеваний. За медицинскими рекомендациями обращайтесь к специалистам.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">6. Интеллектуальная собственность</h2>
+            <p class="text-gray-600 leading-relaxed">
+              Содержимое, фирменный стиль и функции приложения — собственность Magerly и защищены законами об ИС. Копирование, модификация, распространение и продажа без письменного разрешения запрещены.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">7. Ограничение ответственности</h2>
+            <p class="text-gray-600 leading-relaxed">
+              В максимально допустимых законом пределах Magerly и аффилированные лица не несут ответственности за косвенные, случайные, особые, штрафные убытки, а также за потерю прибыли, данных, репутации и прочих нематериальных выгод в связи с использованием приложения.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">8. Прекращение доступа</h2>
+            <p class="text-gray-600 leading-relaxed">
+              Мы можем приостановить или прекратить доступ к приложению без предварительного уведомления при нарушении Условий или действиях, угрожающих пользователям и сервису.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">9. Изменения Условий</h2>
+            <p class="text-gray-600 leading-relaxed">
+              Мы можем обновлять Условия при изменениях продукта, технологий или требований закона. Продолжая пользоваться приложением, вы соглашаетесь с обновленной версией.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">10. Применимое право</h2>
+            <p class="text-gray-600 leading-relaxed">
+              Условия регулируются правом юрисдикции, где действует Magerly, без учета коллизионных норм.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">11. Контакты</h2>
+            <p class="text-gray-600 leading-relaxed">
+              Вопросы по Условиям? Напишите нам: 
+              <a href="mailto:magerly.growing.together@gmail.com" class="text-primary-600 hover:text-primary-700 underline">magerly.growing.together@gmail.com</a>.
+            </p>
+          </section>
+
+          <div class="bg-gradient-to-r from-primary-50 to-primary-100 p-6 rounded-lg text-center">
+            <p class="text-primary-800 text-lg">
+              Спасибо, что выбираете Magerly 💛
+            </p>
+            <p class="text-primary-700 mt-2">
+              Мы рады быть частью вашего родительского пути
+            </p>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-12 pt-8 border-t border-gray-200">
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">
+            Готовы начать путь роста вашего малыша?
+          </h3>
+          <button data-download-button data-location="terms-cta" class="btn-primary">
+            Скачать Magerly
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container-max text-center">
+      <div class="flex items-center justify-center space-x-2 mb-4">
+        <img src="../assets/images/icon.png" alt="Baby milestone icon" class="w-8 h-8">
+        <span class="text-xl font-bold">Magerly</span>
+      </div>
+      <p class="text-gray-400">
+        © 2025 Magerly. Все права защищены.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>
+

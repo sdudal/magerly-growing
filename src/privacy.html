@@ -2,6 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script>
+    // Language detection and redirect
+    (function() {
+      // Check if already on a language-specific path
+      const currentPath = window.location.pathname;
+      if (currentPath.startsWith('/ru/') || currentPath.startsWith('/en/')) {
+        return; // Already on language-specific path
+      }
+      
+      // Get browser language
+      const browserLang = navigator.language || navigator.userLanguage;
+      const langCode = browserLang.split('-')[0].toLowerCase();
+      
+      // Check if Russian and not on /ru path
+      if (langCode === 'ru' && !currentPath.includes('/ru')) {
+        const newPath = currentPath === '/' ? '/ru/' : '/ru' + currentPath;
+        window.location.href = newPath;
+      }
+    })();
+  </script>
+
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy - Magerly Baby Development App</title>
   
@@ -52,16 +74,16 @@
   <link rel="stylesheet" href="./css/style.css">
   
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👶</text></svg>">
+  <link rel="icon" href="./assets/images/icon.png">
 </head>
 <body class="bg-gray-50">
   <!-- Navigation -->
   <header>
     <nav class="bg-white shadow-sm" role="navigation" aria-label="Main navigation">
       <div class="container-max">
-        <div class="flex justify-between items-center py-4">
+        <div class="flex justify-between items-center py-4 px-4 md:px-0">
           <a href="./index.html" class="flex items-center space-x-2" aria-label="Magerly Homepage">
-            <span class="text-2xl" role="img" aria-label="Baby milestone icon">👶</span>
+            <img src="./assets/images/icon.png" alt="Baby milestone icon" class="w-8 h-8">
             <span class="text-xl font-bold text-primary-600">Magerly</span>
           </a>
           
@@ -293,7 +315,7 @@
   <footer class="bg-gray-900 text-white py-8">
     <div class="container-max text-center">
       <div class="flex items-center justify-center space-x-2 mb-4">
-        <span class="text-2xl" role="img" aria-label="Baby milestone icon">👶</span>
+        <img src="./assets/images/icon.png" alt="Magerly Logo" class="w-8 h-8 rounded-full">
         <span class="text-xl font-bold">Magerly</span>
       </div>
       <p class="text-gray-400" data-copyright-year>

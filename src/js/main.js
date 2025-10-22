@@ -94,7 +94,7 @@ const utils = {
     });
     
     // Also track as a conversion event for easier GA4 reporting
-    this.trackEvent('app_download_click', {
+    this.trackEvent('download_button_click', {
       platform: platform,
       location: location
     });
@@ -121,9 +121,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Initialize age calculator if present
   initAgeCalculator();
-  
-  // Initialize email capture form if present
-  initEmailCapture();
   
   // Initialize smooth scrolling for navigation
   initSmoothScrolling();
@@ -367,12 +364,7 @@ function initSmartAppStoreButtons(platform) {
   iosBtn.setAttribute('aria-label', 'Download Magerly on the App Store for iPhone and iPad');
   androidBtn.setAttribute('aria-label', 'Get Magerly on Google Play for Android devices');
   genericBtn.setAttribute('aria-label', 'Download Magerly mobile app for your device');
-  
-  // Track smart button display
-  utils.trackEvent('smart_buttons_displayed', {
-    platform: platform,
-    buttons_shown: getVisibleButtons([iosBtn, androidBtn, genericBtn])
-  });
+
 }
 
 function getVisibleButtons(buttons) {
@@ -950,12 +942,6 @@ class BabyAgeCalculator {
           this.showReturnVisitorExperience(data, birthDate);
         }
         
-        // Track returning visitor
-        utils.trackEvent('calculator_returning_visitor', {
-          calculation_count: data.calculationCount,
-          days_since_last: Math.floor((Date.now() - new Date(data.lastCalculated)) / (1000 * 60 * 60 * 24))
-        });
-        
         // Auto-calculate for seamless experience
         if (data.calculationCount > 1) {
           setTimeout(() => {
@@ -1034,7 +1020,6 @@ class BabyAgeCalculator {
         confirmation.remove();
       }, 3000);
       
-      utils.trackEvent('calculator_data_cleared');
     } catch (error) {
       console.warn('Unable to clear stored data:', error);
     }
@@ -1065,71 +1050,13 @@ class BabyAgeCalculator {
       this.errorContainer.classList.add('hidden');
     }
   }
-  
-  trackCalculatorUsage(age) {
-    utils.trackEvent('baby_age_calculated', {
-      baby_age_years: age.years,
-      baby_age_months: age.totalMonths,
-      baby_age_days: age.totalDays,
-      calculation_count: this.getCalculationCount()
-    });
-  }
 }
 
 // Initialize age calculator
 function initAgeCalculator() {
   const calculator = new BabyAgeCalculator();
-  
-
-  
+   
   return calculator;
-}
-
-// Email capture functionality
-function initEmailCapture() {
-  const forms = document.querySelectorAll('[data-email-capture]');
-  
-  forms.forEach(form => {
-    form.addEventListener('submit', async function(e) {
-      e.preventDefault();
-      
-      const emailInput = form.querySelector('input[type="email"]');
-      const submitButton = form.querySelector('button[type="submit"]');
-      const messageDiv = form.querySelector('[data-message]');
-      
-      if (!emailInput || !emailInput.value) {
-        showMessage(messageDiv, 'Please enter a valid email address.', 'error');
-        return;
-      }
-      
-      // Disable button and show loading state
-      const originalText = submitButton.textContent;
-      submitButton.disabled = true;
-      submitButton.textContent = 'Subscribing...';
-      
-      try {
-        // In a real implementation, this would send to your backend API
-        // For now, simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        
-        // Track email capture
-        utils.trackEvent('email_captured', {
-          source: form.dataset.source || 'unknown',
-          email_domain: emailInput.value.split('@')[1]
-        });
-        
-        showMessage(messageDiv, 'Thank you! We\'ll keep you updated on Magerly.', 'success');
-        form.reset();
-        
-      } catch (error) {
-        console.error('Email capture error:', error);
-        showMessage(messageDiv, 'Sorry, something went wrong. Please try again.', 'error');
-      } finally {
-        submitButton.disabled = false;
-        submitButton.textContent = originalText;
-      }
-    });
-  });
 }
 
 // Smooth scrolling for navigation links
@@ -1162,8 +1089,6 @@ class NavigationController {
     // Initialize keyboard navigation
     this.initKeyboardNavigation();
     
-    // Set active navigation item
-    this.setActiveNavItem();
   }
   
   initSmoothScrolling() {
@@ -1344,23 +1269,6 @@ class NavigationController {
     });
   }
   
-  setActiveNavItem() {
-    // Set active nav item based on current page
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const navLinks = document.querySelectorAll('nav a');
-    
-    navLinks.forEach(link => {
-      const linkHref = link.getAttribute('href');
-      if (linkHref && !linkHref.startsWith('#')) {
-        const linkPage = linkHref.split('/').pop();
-        if (linkPage === currentPage || (currentPage === '' && linkPage === 'index.html')) {
-          link.classList.add('text-primary-600', 'font-semibold');
-          link.setAttribute('aria-current', 'page');
-        }
-      }
-    });
-  }
-  
   updateActiveNavOnScroll() {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('nav a[href^="#"]');
@@ -1466,13 +1374,6 @@ class CarouselController {
     const percentPerSlide = (100 / this.itemsPerView);
     const offset = -this.currentSlide * percentPerSlide;
     this.track.style.transform = `translateX(${offset}%)`;
-
-    // Track carousel navigation
-    utils.trackEvent('carousel_slide_viewed', {
-      slide_number: this.currentSlide + 1,
-      total_slides: this.totalSlides,
-      items_per_view: this.itemsPerView
-    });
   }
 }
 
@@ -1558,9 +1459,7 @@ function initSocialMediaLinks() {
 
 function getSocialPlatform(url) {
   if (url.includes('facebook')) return 'facebook';
-  if (url.includes('twitter')) return 'twitter';
   if (url.includes('instagram')) return 'instagram';
-  if (url.includes('linkedin')) return 'linkedin';
   return 'unknown';
 }
 

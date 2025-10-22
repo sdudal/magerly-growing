@@ -11,9 +11,23 @@ export default defineConfig({
         main: resolve(__dirname, 'src/index.html'),
         privacy: resolve(__dirname, 'src/privacy.html'),
         terms: resolve(__dirname, 'src/terms.html'),
+        'ru/index': resolve(__dirname, 'src/ru/index.html'),
+        'ru/privacy': resolve(__dirname, 'src/ru/privacy.html'),
+        'ru/terms': resolve(__dirname, 'src/ru/terms.html')
       },
     },
     minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,  // Remove console.log statements
+        drop_debugger: true, // Remove debugger statements
+        pure_funcs: ['console.log', 'console.info', 'console.debug'], // Remove specific console methods
+      },
+      format: {
+        comments: false, // Remove all comments
+      },
+    },
+    cssMinify: true, // Explicitly enable CSS minification
     sourcemap: false,
   },
   server: {

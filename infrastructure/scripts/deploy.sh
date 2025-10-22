@@ -346,34 +346,8 @@ sync_website() {
     
     log_info "Syncing website files to S3 bucket: $bucket_name"
     
-    # Sync files to S3 with appropriate cache headers
-    log_info "Uploading static assets (CSS, JS, images)..."
-    aws s3 sync "$dist_dir" "s3://$bucket_name" \
-        --delete \
-        --cache-control "public,max-age=31536000" \
-        --exclude "*.html" \
-        --exclude "*.json" \
-        --exclude "*.txt"
-    
-    log_info "Uploading HTML files..."
-    aws s3 sync "$dist_dir" "s3://$bucket_name" \
-        --delete \
-        --cache-control "public,max-age=300" \
-        --include "*.html" \
-        --content-type "text/html"
-    
-    log_info "Uploading JSON and text files..."
-    aws s3 sync "$dist_dir" "s3://$bucket_name" \
-        --delete \
-        --cache-control "public,max-age=300" \
-        --include "*.json" \
-        --content-type "application/json"
-    
-    aws s3 sync "$dist_dir" "s3://$bucket_name" \
-        --delete \
-        --cache-control "public,max-age=86400" \
-        --include "*.txt" \
-        --content-type "text/plain"
+    # Sync all files to S3
+    aws s3 sync "$dist_dir" "s3://$bucket_name" --delete
     
     log_success "Website files synced successfully"
     

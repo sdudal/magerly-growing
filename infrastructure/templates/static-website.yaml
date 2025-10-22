@@ -89,6 +89,25 @@ Resources:
         SigningBehavior: always
         SigningProtocol: sigv4
 
+  # Custom Cache Policy for Assets (long-term caching)
+  AssetsCachePolicy:
+    Type: AWS::CloudFront::CachePolicy
+    Properties:
+      CachePolicyConfig:
+        Name: !Sub '${ProjectName}-assets-cache-policy'
+        Comment: 'Long-term caching for static assets (JS, CSS, images, fonts)'
+        DefaultTTL: 31536000  # 1 year
+        MaxTTL: 31536000      # 1 year
+        MinTTL: 86400         # 1 day minimum
+        ParametersInCacheKeyAndForwardedToOrigin:
+          EnableAcceptEncodingGzip: true
+          EnableAcceptEncodingBrotli: true
+          QueryStringsConfig:
+            QueryStringBehavior: none
+          HeadersConfig:
+            HeaderBehavior: none
+          CookiesConfig:
+            CookieBehavior: none
 
   # CloudFront Distribution
   CloudFrontDistribution:
@@ -105,29 +124,17 @@ Resources:
           ViewerProtocolPolicy: redirect-to-https
           AllowedMethods: [GET, HEAD, OPTIONS]
           CachedMethods: [GET, HEAD, OPTIONS]
-          Compress: true
-          CachePolicyId: 4135ea2d-6df8-44a3-9df3-4b5a84be39ad  # Managed-CachingOptimized
+          CachePolicyId: 658327ea-f89d-4fab-a63d-7e88639e58f6  # Managed-CachingOptimizedForUncompressedObjects
           OriginRequestPolicyId: 88a5eaf4-2fd4-4709-b370-b4c650ea3fcf  # Managed-CORS-S3Origin
           ResponseHeadersPolicyId: 67f7725c-6f97-4210-82d7-5512b31e9d03  # Managed-SecurityHeadersPolicy
         CacheBehaviors:
-          - PathPattern: '*.html'
-            TargetOriginId: S3Origin
-            ViewerProtocolPolicy: redirect-to-https
-            AllowedMethods: [GET, HEAD, OPTIONS]
-            CachedMethods: [GET, HEAD, OPTIONS]
-            Compress: true
-            CachePolicyId: 4135ea2d-6df8-44a3-9df3-4b5a84be39ad
-            DefaultTTL: 300  # 5 minutes for HTML files
-            MaxTTL: 86400    # 24 hours max
           - PathPattern: '/assets/*'
             TargetOriginId: S3Origin
             ViewerProtocolPolicy: redirect-to-https
             AllowedMethods: [GET, HEAD]
             CachedMethods: [GET, HEAD]
-            Compress: true
-            CachePolicyId: 4135ea2d-6df8-44a3-9df3-4b5a84be39ad
-            DefaultTTL: 31536000  # 1 year for assets
-            MaxTTL: 31536000
+            CachePolicyId: !Ref AssetsCachePolicy
+            OriginRequestPolicyId: 88a5eaf4-2fd4-4709-b370-b4c650ea3fcf  # Managed-CORS-S3Origin
         DefaultRootObject: index.html
         CustomErrorResponses:
           - ErrorCode: 403

@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    // Save language preference for Russian page
+    (function() {
+      // User is on Russian page, save their preference
+      localStorage.setItem('magerly_language', 'ru');
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magerly - Помощник в развитии вашего малыша</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Отслеживайте развитие малыша с Magerly: достижения, рост и советы по возрасту. Бесплатно для iOS и Android.">
+  <meta name="keywords" content="приложение развитие ребенка, достижения развития, рост ребенка, приложение для родителей, трекер развития">
+  <meta name="author" content="Magerly">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://magerly.com/ru/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://magerly.com/ru/">
+  <meta property="og:title" content="Magerly - Помощник в развитии вашего малыша">
+  <meta property="og:description" content="Спокойно отслеживайте рост и достижения развития с умными подсказками по возрасту.">
+  <meta property="og:image" content="https://magerly.com/og-preview.svg">
+  <meta property="og:image:alt" content="Приложение Magerly - трекер развития ребенка">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Magerly">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://magerly.com/ru/">
+  <meta property="twitter:title" content="Magerly - Помощник в развитии вашего малыша">
+  <meta property="twitter:description" content="Все важное о росте и развитии - в одном приложении.">
+  <meta property="twitter:image" content="https://magerly.com/twitter-card.svg">
+  <meta property="twitter:image:alt" content="Magerly - приложение для родителей">
+  <meta name="twitter:creator" content="@magerly">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-27QDM88JLM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-27QDM88JLM', {
+      'anonymize_ip': true,
+      'cookie_flags': 'SameSite=None;Secure'
+    });
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/images/icon.png">
+  <link rel="apple-touch-icon" href="../assets/images/icon.png">
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="./js/main.js" as="script">
+  <link rel="preload" href="../assets/images/bg-1.png" as="image" fetchpriority="high">
+  
+  <!-- Preload critical font files -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <!-- Load CSS asynchronously to avoid blocking render -->
+  <link rel="preload" href="../css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="../css/style.css"></noscript>
+  
+  <!-- Fonts - Load asynchronously to avoid blocking -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+  
+  <!-- Critical inline CSS for above-the-fold content -->
+  <style>
+    /* Critical styles for initial render */
+    *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}
+    html{line-height:1.5;-webkit-text-size-adjust:100%;tab-size:4;font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;scroll-behavior:smooth}
+    body{margin:0;line-height:1.6;color:#111827;font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}
+    h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:600;line-height:1.2}
+    a{color:inherit;text-decoration:inherit}
+    button{font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0;background-color:transparent;background-image:none;cursor:pointer}
+    img,svg{display:block;vertical-align:middle;max-width:100%;height:auto}
+    .hero-gradient{background:#2563eb}
+    .text-white{color:#fff}
+    .text-primary-100{color:#dbeafe}
+    .text-yellow-300{color:#fde047}
+    .text-primary-600{color:#2563eb}
+    .bg-white{background-color:#fff}
+    .bg-black{background-color:#000}
+    .font-bold{font-weight:700}
+    .font-semibold{font-weight:600}
+    .font-light{font-weight:300}
+    .text-4xl{font-size:2.25rem;line-height:2.5rem}
+    .text-xl{font-size:1.25rem;line-height:1.75rem}
+    .text-lg{font-size:1.125rem;line-height:1.75rem}
+    .text-sm{font-size:.875rem;line-height:1.25rem}
+    .text-xs{font-size:.75rem;line-height:1rem}
+    .mb-6{margin-bottom:1.5rem}
+    .mb-8{margin-bottom:2rem}
+    .pt-24{padding-top:6rem}
+    .pb-16{padding-bottom:4rem}
+    .px-4{padding-left:1rem;padding-right:1rem}
+    .py-3{padding-top:.75rem;padding-bottom:.75rem}
+    .px-6{padding-left:1.5rem;padding-right:1.5rem}
+    .px-8{padding-left:2rem;padding-right:2rem}
+    .rounded-lg{border-radius:.5rem}
+    .rounded-xl{border-radius:.75rem}
+    .shadow-lg{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
+    .flex{display:flex}
+    .hidden{display:none}
+    .relative{position:relative}
+    .absolute{position:absolute}
+    .z-10{z-index:10}
+    .overflow-hidden{overflow:hidden}
+    .items-center{align-items:center}
+    .justify-center{justify-content:center}
+    .space-x-2>:not([hidden])~:not([hidden]){margin-left:.5rem}
+    .space-x-3>:not([hidden])~:not([hidden]){margin-left:.75rem}
+    .space-x-4>:not([hidden])~:not([hidden]){margin-left:1rem}
+    .space-x-8>:not([hidden])~:not([hidden]){margin-left:2rem}
+    .gap-4{gap:1rem}
+    .gap-12{gap:3rem}
+    .text-center{text-align:center}
+    .leading-tight{line-height:1.25}
+    .leading-relaxed{line-height:1.625}
+    @media(min-width:640px){.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}
+    @media(min-width:768px){.md\:flex{display:flex}.md\:w-auto{width:auto}.md\:bottom-0{bottom:0}.md\:right-0{right:0}.md\:top-auto{top:auto}.md\:left-auto{left:auto}.md\:translate-x-0{transform:translateX(0)}}
+    @media(min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:text-6xl{font-size:3.75rem;line-height:1}.lg\:text-2xl{font-size:1.5rem;line-height:2rem}.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:text-left{text-align:left}.lg\:justify-start{justify-content:flex-start}}
+  </style>
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Magerly",
+        "url": "https://magerly.com",
+        "logo": "https://magerly.com/assets/images/logo.png",
+        "description": "Baby development tracking app for new parents",
+        "founder": {
+          "@type": "Person",
+          "name": "Magerly Team"
+        },
+        "foundingDate": "2024"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Magerly - Baby Development Tracker",
+        "description": "Track your baby's growth milestones with development guidance for new parents",
+        "operatingSystem": ["iOS", "Android"],
+        "applicationCategory": "HealthApplication",
+        "downloadUrl": ["https://apps.apple.com/app/magerly", "https://play.google.com/store/apps/details?id=com.magerly"],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@type": "Organization",
+          "@id": "#organization"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "#organization"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is Magerly free to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Magerly offers a robust free version with all essential tracking features. We also offer a premium subscription."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How accurate are the growth predictions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our predictions are based on WHO growth standards and peer-reviewed research. However, every baby develops at their own pace, and our app should complement, not replace, professional medical advice."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my baby's data secure and private?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we take privacy seriously. All collected data is stored only on your device - we never store or transfer your data to external servers. We use AdMob for ads, but your baby's information stays with you. We never share personal information with third parties without your explicit consent."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use Magerly if my baby is already a few months old?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Definitely. Just set your baby's birth date and Magerly will pick up right where you are, giving tips and support based on your child's current stage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is Magerly different from other parenting apps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Unlike generic apps, Magerly offers calm, focused guidance. It doesn't overload you - just the right advice at the right moment, designed to gently support your journey through baby's early years."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Magerly replace visits to a pediatrician?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No - Magerly is a supportive tool, not a medical app. It offers daily tips and reminders based on typical development but should always be used alongside professional healthcare."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Magerly suitable for first-time parents?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely! Magerly was created with first-time parents in mind. It guides you step by step with clear, daily tips and easy tasks, without overwhelming you with too much information."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What kind of advice does the app offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You'll receive expert-backed, science-based advice tailored to your baby's exact age - from bonding and play ideas to motor skills and sleep tips. Everything is short, sweet, and practical."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-gray-50">
+  <!-- Skip Links for Accessibility -->
+  <a href="#main-content" class="skip-link sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-primary-600 focus:text-white focus:px-4 focus:py-2 focus:rounded">
+    Skip to main content
+  </a>
+  
+  <!-- Navigation -->
+  <header>
+    <nav class="bg-white shadow-sm fixed w-full top-0 z-50 header-sticky" role="navigation" aria-label="Main navigation">
+    <div class="container-max">
+      <div class="flex justify-between items-center py-4 px-4 md:px-0">
+        <a href="/ru/index.html" class="flex items-center space-x-2" aria-label="Magerly Homepage">
+          <img src="../assets/images/icon.png" alt="Baby milestone icon" class="w-8 h-8">
+          <span class="text-xl font-bold text-primary-600">Magerly</span>
+        </a>
+        
+        <div class="hidden md:flex space-x-8">
+          <a href="#features" class="text-gray-600">Функции</a>
+          <a href="#how-it-works" class="text-gray-600">Как это работает</a>
+          <a href="#app-screenshots" class="text-gray-600">Интерфейс</a>
+          <a href="#testimonials" class="text-gray-600">Отзывы</a>
+          <a href="#pricing" class="text-gray-600">Цены</a>
+          <a href="#faq" class="text-gray-600">Вопросы</a>
+        </div>
+        
+        <div class="hidden md:flex items-center space-x-4">
+          <!-- Language Selector -->
+          <div class="relative" id="language-selector">
+            <button class="flex items-center space-x-2 text-gray-600 hover:text-gray-900 px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors" 
+                    aria-label="Выбрать язык"
+                    id="language-toggle">
+              <img src="../assets/images/flags/russian-flag.png" alt="Русский" class="w-5 h-5 rounded">
+              <span class="hidden sm:inline text-sm font-medium">Русский</span>
+            </button>
+            
+            <!-- Language Dropdown -->
+            <div class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg hidden z-50" id="language-dropdown">
+              <a href="/" class="flex items-center space-x-3 px-4 py-2 text-gray-700 hover:bg-primary-50 first:rounded-t-lg transition-colors">
+                <img src="../assets/images/flags/english-flag.png" alt="English" class="w-5 h-5 rounded">
+                <span>English</span>
+              </a>
+              <a href="/ru/index.html" class="flex items-center space-x-3 px-4 py-2 text-gray-700 hover:bg-primary-50 last:rounded-b-lg transition-colors">
+                <img src="../assets/images/flags/russian-flag.png" alt="Русский" class="w-5 h-5 rounded">
+                <span>Русский</span>
+              </a>
+            </div>
+        </div>
+        
+        <button data-download-button data-location="header" class="btn-primary">
+            Скачать
+          </button>
+        </div>
+        
+        <!-- Mobile Download Button -->
+        <button data-download-button data-location="mobile-header" class="md:hidden btn-primary px-6 py-2.5">
+          Скачать
+        </button>
+        
+        <!-- Mobile menu button -->
+        <button class="md:hidden p-2" id="mobile-menu-button" 
+                aria-expanded="false" 
+                aria-controls="mobile-menu-overlay"
+                aria-label="Open navigation menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    </nav>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="md:hidden fixed inset-0 z-40 bg-black bg-opacity-50 hidden" 
+       id="mobile-menu-overlay" 
+       aria-hidden="true"
+       aria-modal="true"
+       role="dialog"
+       aria-labelledby="mobile-menu-title">
+    <div class="bg-white w-64 h-full p-6" role="document">
+      <div class="flex justify-between items-center mb-8">
+        <span id="mobile-menu-title" class="text-xl font-bold text-primary-600">Magerly</span>
+        <button id="mobile-menu-close" class="p-2" aria-label="Close navigation menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <nav class="space-y-4 border-b border-gray-200 pb-4 mb-4" role="navigation" aria-label="Mobile navigation">
+        <a href="#features" class="block py-2 text-gray-600 hover:text-primary-600">Функции</a>
+        <a href="#how-it-works" class="block py-2 text-gray-600 hover:text-primary-600">Как это работает</a>
+        <a href="#app-screenshots" class="block py-2 text-gray-600 hover:text-primary-600">Интерфейс</a>
+        <a href="#testimonials" class="block py-2 text-gray-600 hover:text-primary-600">Отзывы</a>
+        <a href="#pricing" class="block py-2 text-gray-600 hover:text-primary-600">Цены</a>
+        <a href="#faq" class="block py-2 text-gray-600 hover:text-primary-600">Вопросы</a>
+      </nav>
+      
+      <!-- Mobile Menu - Languages -->
+      <div class="mb-4 pb-4 border-b border-gray-200">
+        <h4 class="text-xs font-semibold text-gray-500 uppercase mb-2">Язык</h4>
+        <div class="space-y-2">
+          <a href="/" class="flex items-center space-x-2 py-2 text-gray-600 hover:text-primary-600">
+            <img src="../assets/images/flags/english-flag.png" alt="English" class="w-5 h-5 rounded">
+            <span>English</span>
+          </a>
+          <a href="/ru/index.html" class="flex items-center space-x-2 py-2 text-primary-600 font-semibold">
+            <img src="../assets/images/flags/russian-flag.png" alt="Русский" class="w-5 h-5 rounded">
+            <span>Русский</span>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu - Legal -->
+      <div class="space-y-2">
+        <h4 class="text-xs font-semibold text-gray-500 uppercase mb-2">Информация</h4>
+        <a href="./privacy.html" class="block py-2 text-sm text-gray-600 hover:text-primary-600">Политика конфиденциальности</a>
+        <a href="./terms.html" class="block py-2 text-sm text-gray-600 hover:text-primary-600">Условия использования</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white pt-24 pb-16 relative overflow-hidden" aria-labelledby="hero-heading">
+    <!-- Background Image -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 md:top-auto md:left-auto md:bottom-0 md:right-0 md:translate-x-0 opacity-10 pointer-events-none w-full md:w-auto" style="height: 50%;">
+      <img src="../assets/images/bg-1.png" alt="" class="w-full h-full object-cover object-top md:object-right-bottom" fetchpriority="high" decoding="async">
+    </div>
+    <div class="container-max section-padding relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="text-center lg:text-left">
+          <h1 id="hero-heading" class="text-4xl lg:text-6xl font-bold mb-6">
+            Отслеживайте развитие вашего малыша с
+            <span class="block text-yellow-300">Magerly</span>
+          </h1>
+          <h2 class="text-xl lg:text-2xl mb-8 text-primary-100 leading-relaxed font-light">
+            Умное приложение для родителей: отслеживайте достижения, здоровье и развитие без лишней суеты.
+          </h2>
+          
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+            <div class="app-store-buttons flex flex-col sm:flex-row gap-3">
+              <!-- iOS App Store Button -->
+              <button id="ios-download-btn" 
+                      data-download-button 
+                      data-location="hero-ios"
+                      data-platform="ios"
+                      class="download-btn ios-btn bg-black text-white rounded-xl shadow-lg hidden"
+                      style="padding: 8px 16px; min-width: 180px;">
+                <div class="flex items-center justify-center space-x-3">
+                  <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                  </svg>
+                  <div class="text-left">
+                    <div class="text-xs leading-tight">Download on the</div>
+                    <div class="text-lg font-semibold leading-tight">App Store</div>
+                  </div>
+                </div>
+              </button>
+              
+              <!-- Google Play Button -->
+              <button id="android-download-btn" 
+                      data-download-button 
+                      data-location="hero-android"
+                      data-platform="android"
+                      class="download-btn android-btn bg-black text-white rounded-xl shadow-lg hidden"
+                      style="padding: 8px 16px; min-width: 180px;">
+                <div class="flex items-center justify-center space-x-3">
+                  <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                  </svg>
+                  <div class="text-left">
+                    <div class="text-xs leading-tight">GET IT ON</div>
+                    <div class="text-lg font-semibold leading-tight">Google Play</div>
+                  </div>
+                </div>
+              </button>
+              
+              <!-- Fallback/Generic Button -->
+              <button id="generic-download-btn" 
+                      data-download-button 
+                      data-location="hero-generic"
+                      class="download-btn generic-btn bg-white text-primary-600 px-8 py-3 rounded-xl font-semibold shadow-lg"
+                      style="min-width: 180px;">
+                <span class="flex items-center justify-center space-x-2">
+                  <span>📱</span>
+                  <span>Скачать бесплатно</span>
+                </span>
+              </button>
+            </div>
+            
+            
+          </div>
+          
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6 text-white">
+            <div class="flex items-center space-x-2 bg-white/20 px-4 py-2 rounded-full">
+              <span class="text-lg">👨‍👩‍👧‍👦</span>
+              <span class="text-sm font-semibold">300+ родителей по всему миру</span>
+            </div>
+            <div class="flex items-center space-x-2 bg-white/20 px-4 py-2 rounded-full">
+              <span class="text-lg">🌐</span>
+              <span class="text-sm font-semibold">Поддержка 7 языков</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex justify-center relative">
+          <!-- App Mockup Container -->
+          <div class="relative z-10">
+            <!-- App Preview Mockup - iPhone Frame -->
+            <div class="relative bg-gray-900 p-3 rounded-3xl shadow-2xl" style="width: 290px;">
+              <div class="w-full bg-blue-50 rounded-2xl p-4 flex flex-col items-center justify-center text-center" style="height: 520px;">
+                <div class="space-y-3 overflow-y-auto w-full">
+                  <div class="text-center">
+                    <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-2">
+                      M
+                    </div>
+                    <h3 class="text-base font-bold text-gray-800 mb-1">Приложение Magerly</h3>
+                    <p class="text-xs text-gray-600">Отслеживать • Учиться • Праздновать</p>
+                  </div>
+                  
+                  <div class="space-y-2 text-gray-700 px-2">
+                    <div class="flex items-center space-x-2 p-2 bg-white rounded-lg shadow-sm cursor-pointer">
+                      <div class="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center text-white text-sm flex-shrink-0">📊</div>
+                      <div class="flex-1 text-left min-w-0">
+                        <div class="font-semibold text-xs">Рост и графики</div>
+                        <div class="text-xs text-gray-600 leading-tight">Рост, вес и перцентили</div>
+                      </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-2 p-2 bg-white rounded-lg shadow-sm cursor-pointer">
+                      <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center text-white text-sm flex-shrink-0">🎯</div>
+                      <div class="flex-1 text-left min-w-0">
+                        <div class="font-semibold text-xs">Достижения</div>
+                        <div class="text-xs text-gray-600 leading-tight">Оповещения о предстоящих событиях</div>
+                      </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-2 p-2 bg-white rounded-lg shadow-sm cursor-pointer">
+                      <div class="w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center text-white text-sm flex-shrink-0">📅</div>
+                      <div class="flex-1 text-left min-w-0">
+                        <div class="font-semibold text-xs">Ежедневные советы</div>
+                        <div class="text-xs text-gray-600 leading-tight">Короткие подсказки на каждый день</div>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center space-x-2 p-2 bg-white rounded-lg shadow-sm cursor-pointer">
+                      <div class="w-8 h-8 bg-yellow-500 rounded-lg flex items-center justify-center text-white text-sm flex-shrink-0">🎮</div>
+                      <div class="flex-1 text-left min-w-0">
+                        <div class="font-semibold text-xs">Центр игр</div>
+                        <div class="text-xs text-gray-600 leading-tight">Полезные и веселые занятия</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="text-center pt-2 border-t border-gray-200">
+                    <div class="text-xs text-gray-600 mt-2">Присоединяйтесь к 300+ родителям</div>
+                    <a href="#app-screenshots" class="inline-flex items-center space-x-1 text-primary-600 hover:text-primary-700 font-semibold text-xs transition-colors mt-2">
+                      <span>Посмотреть, как выглядит</span>
+                      <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Age Calculator Section (removed) -->
+  <!--
+    <section id="age-calculator" class="section-padding bg-white" aria-labelledby="calculator-heading">
+    <div class="container-max">
+      <div class="text-center mb-12">
+        <h2 id="calculator-heading" class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          Сколько вашему малышу?
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Узнайте точный возраст и посмотрите, какие достижения впереди.
+        </p>
+      </div>
+      
+        <div class="max-w-2xl mx-auto">
+        <div class="card relative">
+          
+          <div class="relative z-10">
+            <div class="text-center mb-6">
+              <div class="text-4xl mb-4">🍼</div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Калькулятор возраста</h3>
+              <p class="text-gray-600">Узнайте возраст малыша и получите персональные достижения</p>
+            </div>
+            
+            <form id="baby-age-form" class="space-y-6">
+              <div>
+                <label for="baby-birth-date" class="block text-sm font-medium text-gray-700 mb-2">
+                  Когда родился ваш малыш? <span class="text-red-500">*</span>
+                </label>
+                <div class="relative">
+                  <input type="date" 
+                         id="baby-birth-date" 
+                         name="birthDate"
+                         class="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg text-lg"
+                         aria-describedby="birth-date-help birth-date-error"
+                         required>
+                  <div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">
+                    <span class="text-lg">📅</span>
+                  </div>
+                </div>
+                <div id="birth-date-help" class="text-sm text-gray-500 mt-1">
+                  Выберите дату рождения - покажем персональные достижения
+                </div>
+                <div id="birth-date-error" class="text-red-500 text-sm mt-1 hidden" role="alert"></div>
+              </div>
+              
+              <div class="text-center">
+                <button type="submit" 
+                        id="calculate-baby-age" 
+                        class="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg disabled:opacity-50 disabled:cursor-not-allowed">
+                  <span class="flex items-center justify-center space-x-2">
+                    <span id="calculate-icon">🎯</span>
+                    <span id="calculate-text">Рассчитать возраст и достижения</span>
+                  </span>
+                </button>
+              </div>
+            </form>
+            
+
+            <div id="age-calculator-results" class="mt-8 hidden">
+
+              <div class="bg-blue-50 rounded-xl p-6 mb-6 text-center">
+                <div class="text-3xl font-bold text-primary-600 mb-2" id="baby-age-display"></div>
+                <div class="text-gray-600 mb-2" id="exact-age-display"></div>
+                <div class="text-sm text-gray-500" id="next-milestone-preview"></div>
+              </div>
+              
+
+              <div id="milestone-content" class="space-y-4 mb-6">
+              </div>
+              
+              <div class="bg-purple-600 text-white p-6 rounded-xl text-center">
+                <div>
+                  <h4 class="text-xl font-bold mb-2">
+                    🌟 Больше персональных подсказок
+                  </h4>
+                  <p class="text-purple-100 mb-4" id="personalized-message">
+                    Подробные достижения и графики роста именно под возраст вашего малыша.
+                  </p>
+                  
+                  <div class="flex flex-col sm:flex-row gap-3 justify-center items-center mb-4">
+                    <button class="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold shadow-lg"
+                            onclick="utils.trackEvent('calculator_to_download', { baby_age_months: window.calculatedAge?.totalMonths || 0 }); document.getElementById('ios-download-btn')?.click() || document.getElementById('android-download-btn')?.click() || document.getElementById('generic-download-btn')?.click()">
+                      <span class="flex items-center space-x-2">
+                        <span>📱</span>
+                        <span>Скачать приложение Magerly</span>
+                      </span>
+                    </button>
+                    
+                    <div class="text-xs text-purple-200 flex items-center space-x-2">
+                      <span>🆓</span>
+                      <span>Бесплатная установка</span>
+                    </div>
+                  </div>
+                  
+                  <div class="text-xs text-purple-200">
+                    Присоединяйтесь к 300+ семьям, отслеживающим развитие
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div id="return-visitor-welcome" class="mt-4 p-4 bg-green-50 border-l-4 border-green-400 rounded-lg hidden">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+
+
+    <!-- Features Section -->
+    <section id="features" class="section-padding bg-gray-50" aria-labelledby="features-heading">
+    <div class="container-max">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          Все, что нужно для спокойного отслеживания развития
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Magerly помогает наблюдать прогресс, лучше понимать потребности малыша и радоваться каждому новому шагу.
+        </p>
+        <div class="flex justify-center space-x-8 mt-6 text-sm text-gray-500">
+          <div class="flex items-center space-x-2">
+            <span class="text-blue-500">✓</span>
+            <span>Просто и удобно</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="text-purple-500">✓</span>
+            <span>Персонально для вашего ребенка</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="card text-center">
+          <div class="text-4xl mb-4">📊</div>
+          <h3 class="text-xl font-semibold mb-3">Отслеживание роста</h3>
+          <p class="text-gray-600">
+            Рост и вес на наглядных графиках с процентилями.
+          </p>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="card text-center">
+          <div class="text-4xl mb-4">🎯</div>
+          <h3 class="text-xl font-semibold mb-3">Оповещения о достижениях</h3>
+          <p class="text-gray-600">
+            Персональные подсказки о том, что впереди, и мягкие напоминания о ключевых этапах.
+          </p>
+        </div>
+        
+        <!-- Feature 3 -->
+        <div class="card text-center">
+          <div class="text-4xl mb-4">📅</div>
+          <h3 class="text-xl font-semibold mb-3">Ежедневные рекомендации по возрасту</h3>
+          <p class="text-gray-600">
+            Короткие полезные советы и идеи занятий, соответствующие текущему возрасту малыша.
+          </p>
+        </div>
+        
+        <!-- Feature 4 -->
+        <div class="card text-center">
+          <div class="text-4xl mb-4">📚</div>
+          <h3 class="text-xl font-semibold mb-3">Библиотека материалов</h3>
+          <p class="text-gray-600">
+            Доступ к полезным материалам и подсказкам, соответствующим возрасту и развитию малыша.
+          </p>
+        </div>
+        
+        <!-- Feature 5 -->
+        <div class="card text-center">
+          <div class="text-4xl mb-4">🎮</div>
+          <h3 class="text-xl font-semibold mb-3">Центр игр</h3>
+          <p class="text-gray-600">
+            Идеи игр и активностей для развития мозга и тела - интересно и по делу.
+          </p>
+        </div>
+        
+        <!-- Feature 6 -->
+        <div class="card text-center">
+          <div class="text-4xl mb-4">🏆</div>
+          <h3 class="text-xl font-semibold mb-3">Отслеживание достижений</h3>
+          <p class="text-gray-600">
+            Празднуйте каждую веху: значки достижений и понятная динамика роста мотивируют.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Language Flags -->
+      <div class="mt-16 text-center">
+        <p class="text-xl text-gray-600 mb-6">Доступно на 7 языках</p>
+        <div class="flex justify-center items-center gap-4 flex-wrap">
+          <div class="relative group">
+            <img src="../assets/images/flags/english-flag.png" alt="English" class="w-8 h-8 md:w-12 md:h-12 rounded shadow-sm hover:scale-110 transition-transform cursor-pointer">
+            <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+              English
+            </div>
+          </div>
+          <div class="relative group">
+            <img src="../assets/images/flags/russian-flag.png" alt="Русский" class="w-8 h-8 md:w-12 md:h-12 rounded shadow-sm hover:scale-110 transition-transform cursor-pointer">
+            <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+              Русский
+            </div>
+          </div>
+          <div class="relative group">
+            <img src="../assets/images/flags/french-flag.png" alt="Français" class="w-8 h-8 md:w-12 md:h-12 rounded shadow-sm hover:scale-110 transition-transform cursor-pointer">
+            <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+              Français
+            </div>
+          </div>
+          <div class="relative group">
+            <img src="../assets/images/flags/german-flag.png" alt="Deutsch" class="w-8 h-8 md:w-12 md:h-12 rounded shadow-sm hover:scale-110 transition-transform cursor-pointer">
+            <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+              Deutsch
+            </div>
+          </div>
+          <div class="relative group">
+            <img src="../assets/images/flags/spanish-flag.png" alt="Español" class="w-8 h-8 md:w-12 md:h-12 rounded shadow-sm hover:scale-110 transition-transform cursor-pointer">
+            <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+              Español
+            </div>
+          </div>
+          <div class="relative group">
+            <img src="../assets/images/flags/turkish-flag.png" alt="Türkçe" class="w-8 h-8 md:w-12 md:h-12 rounded shadow-sm hover:scale-110 transition-transform cursor-pointer">
+            <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+              Türkçe
+            </div>
+          </div>
+          <div class="relative group">
+            <img src="../assets/images/flags/polish-flag.png" alt="Polski" class="w-8 h-8 md:w-12 md:h-12 rounded shadow-sm hover:scale-110 transition-transform cursor-pointer">
+            <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+              Polski
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="section-padding bg-white">
+    <div class="container-max">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          Как начать за пару шагов
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Начните отслеживать рост малыша всего за несколько минут.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center text-2xl font-bold text-primary-600 mx-auto mb-4">
+            1
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Скачайте и настройте</h3>
+          <p class="text-gray-600">
+            Установите Magerly и создайте профиль малыша за пару минут.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center text-2xl font-bold text-primary-600 mx-auto mb-4">
+            2
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Отмечайте достижения</h3>
+          <p class="text-gray-600">
+            Записывайте измерения, достижения и важные моменты по мере роста.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center text-2xl font-bold text-primary-600 mx-auto mb-4">
+            3
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Получайте подсказки</h3>
+          <p class="text-gray-600">
+            Персональные рекомендации, идеи и мотивация - на каждом этапе.
+          </p>
+        </div>
+      </div>
+      
+      <div class="text-center mt-12">
+        <button data-download-button data-location="how-it-works" class="btn-primary">
+          Начать сегодня
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Screenshots Carousel Section -->
+  <section id="app-screenshots" class="section-padding bg-gradient-to-b from-gray-50 to-white">
+    <div class="container-max">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          Посмотрите интерфейс приложения
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Удобный и красивый интерфейс для спокойного отслеживания пути малыша
+        </p>
+      </div>
+
+      <div class="max-w-6xl mx-auto">
+        <!-- Carousel Container -->
+        <div class="relative bg-white rounded-2xl shadow-2xl overflow-hidden" id="carousel-container">
+          <!-- Carousel Track -->
+          <div class="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white" style="height: 600px;">
+            <div id="carousel-track" class="flex transition-transform duration-500 ease-out h-full" style="transform: translateX(0%);">
+              <!-- Slide 1 -->
+              <div class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 h-full flex items-center justify-center p-2">
+                <img src="../assets/images/1-ru.jpg" alt="Get daily expert tips - Magerly app showing age tracking and milestone information" class="h-full object-contain" loading="lazy">
+              </div>
+              <!-- Slide 2 -->
+              <div class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 h-full flex items-center justify-center p-2">
+                <img src="../assets/images/2-ru.jpg" alt="Track growth milestones - Magerly app interface" class="h-full object-contain" loading="lazy">
+              </div>
+              <!-- Slide 3 -->
+              <div class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 h-full flex items-center justify-center p-2">
+                <img src="../assets/images/3-ru.jpg" alt="Memory timeline - Save precious moments with Magerly" class="h-full object-contain" loading="lazy">
+              </div>
+              <!-- Slide 4 -->
+              <div class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 h-full flex items-center justify-center p-2">
+                <img src="../assets/images/4-ru.jpg" alt="Personalized recommendations - Magerly app insights" class="h-full object-contain" loading="lazy">
+              </div>
+              <!-- Slide 5 -->
+              <div class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 h-full flex items-center justify-center p-2">
+                <img src="../assets/images/5-ru.jpg" alt="Health tracking - Monitor your baby's development" class="h-full object-contain" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <!-- Previous Button -->
+          <button id="carousel-prev" 
+                  class="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition-all hover:shadow-xl"
+                  aria-label="Previous screenshot">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
+
+          <!-- Next Button -->
+          <button id="carousel-next" 
+                  class="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition-all hover:shadow-xl"
+                  aria-label="Next screenshot">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-12">
+          <p class="text-gray-600 mb-4">Готовы попробовать Magerly?</p>
+          <button data-download-button data-location="carousel-cta" class="btn-primary">
+            Скачать приложение сейчас
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section-padding bg-primary-50">
+    <div class="container-max">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          Родители о Magerly
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Что говорят родители о своем опыте с Magerly.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="card">
+          <p class="text-gray-600 mb-4">
+            «С Magerly мне спокойнее: подсказки по вехам помогают понимать, к чему готовиться дальше»
+          </p>
+          <div class="flex items-center">
+            <div class="w-10 h-10 bg-gray-300 rounded-full mr-3"></div>
+            <div>
+              <div class="font-semibold">Sarah M.</div>
+              <div class="text-sm text-gray-600">Мама одного ребенка</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <p class="text-gray-600 mb-4">
+            «Удобно делиться новостями с бабушками и дедушками, а графики очень помогают на приёмах у врача»
+          </p>
+          <div class="flex items-center">
+            <div class="w-10 h-10 bg-gray-300 rounded-full mr-3"></div>
+            <div>
+              <div class="font-semibold">Michael R.</div>
+              <div class="text-sm text-gray-600">Папа двоих детей</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <p class="text-gray-600 mb-4">
+            «Как молодой маме, Magerly придал уверенности: советы действительно полезные!»
+          </p>
+          <div class="flex items-center">
+            <div class="w-10 h-10 bg-gray-300 rounded-full mr-3"></div>
+            <div>
+              <div class="font-semibold">Jessica L.</div>
+              <div class="text-sm text-gray-600">Молодая мама</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="section-padding bg-gradient-to-b from-white to-gray-50">
+    <div class="container-max">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          Простая и понятная стоимость
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Отслеживайте развитие бесплатно. При желании переходите на премиум - без рекламы и с поддержкой дальнейшей разработки.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Free Plan -->
+        <div class="card border-2 border-gray-200 relative">
+          <div class="text-center mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Бесплатный план</h3>
+            <div class="flex items-baseline justify-center">
+              <span class="text-5xl font-bold text-primary-600">$0</span>
+              <span class="text-gray-600 ml-2">/месяц</span>
+            </div>
+          </div>
+
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start">
+              <span class="text-2xl mr-3">📅</span>
+              <div>
+                <strong class="text-gray-900">Ежедневные рекомендации по возрасту</strong>
+                <p class="text-sm text-gray-600 mt-1">Короткие персональные советы на каждый день - поддерживают развитие с рождения до двух лет.</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-2xl mr-3">✨</span>
+              <div>
+                <strong class="text-gray-900">Отслеживание вех развития</strong>
+                <p class="text-sm text-gray-600 mt-1">Помогаем понимать, чего ожидать дальше, и мягко направляем с еженедельными целями и задачами.</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-2xl mr-3">💡</span>
+              <div>
+                <strong class="text-gray-900">Экспертные рекомендации</strong>
+                <p class="text-sm text-gray-600 mt-1">Материалы основаны на научных данных и проверены специалистами - надежная опора для родителей.</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-2xl mr-3">❤️</span>
+              <div>
+                <strong class="text-gray-900">Крепче связь «родитель - малыш»</strong>
+                <p class="text-sm text-gray-600 mt-1">Идеи занятий и небольшие ритуалы помогают укреплять эмоциональную связь и стимулировать развитие.</p>
+              </div>
+            </li>
+          </ul>
+
+          <button data-download-button data-location="pricing-free" class="w-full btn-primary">
+            Начать бесплатно
+          </button>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="card border-2 border-primary-600 relative ring-2 ring-primary-100 transform md:scale-105">
+          <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <span class="bg-primary-600 text-white px-4 py-1 rounded-full text-sm font-semibold">Самый популярный</span>
+          </div>
+
+          <div class="text-center mb-8 pt-4">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Премиум</h3>
+            <div class="flex items-baseline justify-center">
+              <span class="text-5xl font-bold text-primary-600">$1.99</span>
+              <span class="text-gray-600 ml-2">/месяц</span>
+            </div>
+            <p class="text-gray-600 text-sm mt-2">Или выгоднее по годовой подписке</p>
+          </div>
+
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start">
+              <span class="text-2xl mr-3">🎁</span>
+              <div>
+                <strong class="text-gray-900">Все из бесплатного</strong>
+                <p class="text-sm text-gray-600 mt-1">Ежедневные рекомендации, достижения, экспертные советы и активности для укрепления связи.</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-2xl mr-3">🚫</span>
+              <div>
+                <strong class="text-gray-900">Без рекламы</strong>
+                <p class="text-sm text-gray-600 mt-1">Никаких отвлечений. Чистый интерфейс, где все внимание - малышу.</p>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Why go Premium Info -->
+          <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6">
+            <h4 class="text-sm font-semibold text-gray-900 mb-2">💡 Зачем премиум?</h4>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Мы хотим, чтобы Magerly оставалась доступной для всех. Премиум помогает развивать продукт и поддерживать семьи по всему миру. Оформляйте без риска - отменить можно в любой момент.
+            </p>
+          </div>
+
+          <button data-download-button data-location="pricing-premium" class="w-full bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-primary-700 transition-colors">
+            Перейти на премиум
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section-padding bg-gray-50">
+    <div class="container-max">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          Часто задаваемые вопросы
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Здесь собраны ответы на самые частые вопросы о Magerly и отслеживании развития малыша.
+        </p>
+      </div>
+      
+      <div class="grid lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
+        <div class="card">
+          <button class="faq-question w-full text-left flex justify-between items-center py-2" data-target="faq-1">
+            <span class="font-semibold">Magerly бесплатно использовать?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div id="faq-1" class="faq-answer hidden pt-4 text-gray-600">
+            Да, Magerly предлагает надежную бесплатную версию со всеми необходимыми функциями отслеживания. Также доступна премиум‑подписка.
+          </div>
+        </div>
+        
+        <div class="card">
+          <button class="faq-question w-full text-left flex justify-between items-center py-2" data-target="faq-2">
+            <span class="font-semibold">Насколько точны прогнозы роста?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div id="faq-2" class="faq-answer hidden pt-4 text-gray-600">
+            Прогнозы основаны на стандартах ВОЗ и проверенных исследованиях. Каждый малыш уникален, поэтому советы приложения дополняют, а не заменяют врачебные рекомендации.
+          </div>
+        </div>
+        
+        <div class="card">
+          <button class="faq-question w-full text-left flex justify-between items-center py-2" data-target="faq-4">
+            <span class="font-semibold">Безопасны ли данные моего ребенка?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div id="faq-4" class="faq-answer hidden pt-4 text-gray-600">
+            Да. Все данные хранятся только на вашем устройстве - мы не отправляем их на внешние серверы. Реклама показывается через AdMob, но данные малыша не передаются третьим лицам без вашего согласия.
+          </div>
+        </div>
+        
+        <div class="card">
+          <button class="faq-question w-full text-left flex justify-between items-center py-2" data-target="faq-5">
+            <span class="font-semibold">Можно ли начать, если малышу уже несколько месяцев?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div id="faq-5" class="faq-answer hidden pt-4 text-gray-600">
+            Конечно. Укажите дату рождения - и Magerly предложит рекомендации именно под текущий этап развития малыша.
+          </div>
+        </div>
+        
+        <div class="card">
+          <button class="faq-question w-full text-left flex justify-between items-center py-2" data-target="faq-6">
+            <span class="font-semibold">Чем Magerly отличается от других приложений?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div id="faq-6" class="faq-answer hidden pt-4 text-gray-600">
+            В отличие от универсальных приложений, Magerly дает спокойные и точные подсказки - только то, что нужно, в нужный момент, чтобы поддержать вас в первые годы.
+          </div>
+        </div>
+        
+        <div class="card">
+          <button class="faq-question w-full text-left flex justify-between items-center py-2" data-target="faq-7">
+            <span class="font-semibold">Заменяет ли Magerly визиты к педиатру?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div id="faq-7" class="faq-answer hidden pt-4 text-gray-600">
+            Нет. Это вспомогательный инструмент, а не медицинское приложение. Он предлагает ежедневные подсказки и напоминания, но не заменяет консультации специалистов.
+          </div>
+        </div>
+        
+        <div class="card">
+          <button class="faq-question w-full text-left flex justify-between items-center py-2" data-target="faq-8">
+            <span class="font-semibold">Подойдет ли Magerly для молодых родителей?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div id="faq-8" class="faq-answer hidden pt-4 text-gray-600">
+            Да! Magerly создан для тех, кто впервые проходит этот путь. Пошаговые, понятные подсказки и небольшие задачи без лишней перегрузки.
+          </div>
+        </div>
+        
+        <div class="card">
+          <button class="faq-question w-full text-left flex justify-between items-center py-2" data-target="faq-9">
+            <span class="font-semibold">Какие советы дает приложение?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div id="faq-9" class="faq-answer hidden pt-4 text-gray-600">
+            Вы получаете научно обоснованные рекомендации, адаптированные под точный возраст малыша: от идей игр и укрепления связи до моторики и сна. Коротко, по делу и полезно.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="section-padding bg-primary-600 text-white">
+    <div class="container-max text-center">
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4">
+        Готовы начать?
+      </h2>
+      <p class="text-xl text-white mb-8 max-w-2xl mx-auto">
+        Присоединяйтесь к сообществу из 300+ родителей, которые уже доверяют Magerly.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button data-download-button data-location="final-cta" class="btn-primary bg-white text-primary-600">
+          Скачать бесплатно
+        </button>
+        <a href="./privacy.html" class="inline-flex items-center justify-center px-8 py-3 rounded-lg font-semibold border-2 border-white text-white hover:bg-white hover:text-primary-600 transition-colors">
+          Политика конфиденциальности
+        </a>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white section-padding">
+    <div class="container-max">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <img src="../assets/images/icon.png" alt="Magerly Logo" class="w-8 h-8 rounded-full">
+            <span class="text-xl font-bold">Magerly</span>
+          </div>
+          <p class="text-gray-400 mb-4">
+            Ваш надежный помощник в отслеживании роста и праздновании важных моментов.
+          </p>
+          <div class="flex space-x-4">
+            <a href="https://www.facebook.com/groups/981598013945421" 
+               class="text-gray-400 hover:text-white transition-colors" 
+               aria-label="Join Magerly Facebook Community Group"
+               target="_blank" 
+               rel="noopener noreferrer">
+              <span role="img" aria-hidden="true">📘</span>
+            </a>
+            <a href="https://www.instagram.com/magerlygrowingtogether" 
+               class="text-gray-400 hover:text-white transition-colors" 
+               aria-label="Follow @magerlygrowingtogether on Instagram"
+               target="_blank" 
+               rel="noopener noreferrer">
+              <span role="img" aria-hidden="true">📷</span>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold mb-4">Продукт</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#features" class="hover:text-white transition-colors">Функции</a></li>
+            <li><a href="#how-it-works" class="hover:text-white transition-colors">Как это работает</a></li>
+            <li><a href="#app-screenshots" class="hover:text-white transition-colors">Интерфейс</a></li>
+            <li><a href="#pricing" class="hover:text-white transition-colors">Цены</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">Вопросы</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold mb-4">Правовая информация</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="./privacy.html" class="hover:text-white transition-colors">Политика конфиденциальности</a></li>
+            <li><a href="./terms.html" class="hover:text-white transition-colors">Условия использования</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="font-semibold mb-4">Languages</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="/" class="hover:text-white transition-colors">English</a></li>
+            <li><a href="/ru/index.html" class="hover:text-white transition-colors">Русский</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 text-center text-sm text-gray-400">
+        <p>© 2025 Magerly. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="../js/main.js"></script>
+  
+  <!-- FAQ Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const faqQuestions = document.querySelectorAll('.faq-question');
+      
+      faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+          const targetId = this.dataset.target;
+          const answer = document.getElementById(targetId);
+          const icon = this.querySelector('.faq-icon');
+          
+          if (answer.classList.contains('hidden')) {
+            answer.classList.remove('hidden');
+            icon.textContent = '▲';
+          } else {
+            answer.classList.add('hidden');
+            icon.textContent = '▼';
+          }
+        });
+      });
+      
+      // Mobile menu functionality
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+      const mobileMenuClose = document.getElementById('mobile-menu-close');
+      
+      mobileMenuButton?.addEventListener('click', () => {
+        mobileMenuOverlay.classList.remove('hidden');
+      });
+      
+      mobileMenuClose?.addEventListener('click', () => {
+        mobileMenuOverlay.classList.add('hidden');
+      });
+      
+      mobileMenuOverlay?.addEventListener('click', (e) => {
+        if (e.target === mobileMenuOverlay) {
+          mobileMenuOverlay.classList.add('hidden');
+        }
+      });
+
+      // Language selector functionality
+      const languageSelector = document.getElementById('language-selector');
+      const languageToggle = document.getElementById('language-toggle');
+      const languageDropdown = document.getElementById('language-dropdown');
+
+      languageToggle?.addEventListener('click', function() {
+        languageDropdown.classList.toggle('hidden');
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!languageSelector.contains(event.target) && !languageToggle.contains(event.target)) {
+          languageDropdown.classList.add('hidden');
+        }
+      });
+
+      // Save language preference when user clicks language links
+      document.querySelectorAll('a[href="/"], a[href="/ru/index.html"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href === '/') {
+            localStorage.setItem('magerly_language', 'en');
+          } else if (href.includes('/ru/')) {
+            localStorage.setItem('magerly_language', 'ru');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+

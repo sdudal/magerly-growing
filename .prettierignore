@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# BMAD core files (external tools)
+.bmad-core/
+.bmad-*/
+
+# Git and GitHub files
+.git/
+.github/
+
+# Cache directories
+.cache/
+.vite/
+.nx/
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Generated files
+coverage/
+*.log
