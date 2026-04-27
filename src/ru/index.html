@@ -2,40 +2,40 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <script>
-    // Save language preference for Russian page
-    (function() {
-      // User is on Russian page, save their preference
-      localStorage.setItem('magerly_language', 'ru');
-    })();
-  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Magerly - Помощник в развитии вашего малыша</title>
+  <title>Трекер развития и роста ребенка | Magerly - Бесплатно для iOS и Android</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Отслеживайте развитие малыша с Magerly: достижения, рост и советы по возрасту. Бесплатно для iOS и Android.">
-  <meta name="keywords" content="приложение развитие ребенка, достижения развития, рост ребенка, приложение для родителей, трекер развития">
+  <meta name="description" content="Отслеживайте достижения, рост и развитие малыша с ежедневными советами экспертов. Бесплатное приложение Magerly для 300+ родителей. Скачать для iOS и Android.">
+  <meta name="keywords" content="трекер развития ребенка, приложение для мам, рост ребенка по месяцам, достижения малыша, приложение для родителей, трекер роста, календарь развития ребенка, вехи развития">
   <meta name="author" content="Magerly">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://magerly.com/ru/">
   
+  <!-- Hreflang for multilingual SEO -->
+  <link rel="alternate" hreflang="en" href="https://magerly.com/" />
+  <link rel="alternate" hreflang="ru" href="https://magerly.com/ru/" />
+  <link rel="alternate" hreflang="x-default" href="https://magerly.com/" />
+  
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://magerly.com/ru/">
-  <meta property="og:title" content="Magerly - Помощник в развитии вашего малыша">
-  <meta property="og:description" content="Спокойно отслеживайте рост и достижения развития с умными подсказками по возрасту.">
-  <meta property="og:image" content="https://magerly.com/og-preview.svg">
+  <meta property="og:title" content="Трекер развития и роста ребенка | Magerly">
+  <meta property="og:description" content="Отслеживайте достижения, рост и развитие малыша с ежедневными советами экспертов. Бесплатное приложение для 300+ родителей.">
+  <meta property="og:image" content="https://magerly.com/og-preview.png">
   <meta property="og:image:alt" content="Приложение Magerly - трекер развития ребенка">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Magerly">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://magerly.com/ru/">
-  <meta property="twitter:title" content="Magerly - Помощник в развитии вашего малыша">
-  <meta property="twitter:description" content="Все важное о росте и развитии - в одном приложении.">
-  <meta property="twitter:image" content="https://magerly.com/twitter-card.svg">
+  <meta property="twitter:title" content="Трекер развития и роста ребенка | Magerly">
+  <meta property="twitter:description" content="Все важное о росте и развитии малыша - в одном бесплатном приложении.">
+  <meta property="twitter:image" content="https://magerly.com/twitter-card.png">
   <meta property="twitter:image:alt" content="Magerly - приложение для родителей">
   <meta name="twitter:creator" content="@magerly">
 
@@ -138,103 +138,138 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://magerly.com/#website",
+        "url": "https://magerly.com",
+        "name": "Magerly",
+        "description": "Трекер развития и роста ребенка для родителей",
+        "inLanguage": ["en", "ru"],
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://magerly.com/#organization"
+        }
+      },
+      {
         "@type": "Organization",
+        "@id": "https://magerly.com/#organization",
         "name": "Magerly",
         "url": "https://magerly.com",
-        "logo": "https://magerly.com/assets/images/logo.png",
-        "description": "Baby development tracking app for new parents",
-        "founder": {
-          "@type": "Person",
-          "name": "Magerly Team"
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://magerly.com/assets/images/icon.png",
+          "width": 512,
+          "height": 512
         },
-        "foundingDate": "2024"
+        "description": "Приложение для отслеживания развития ребенка",
+        "foundingDate": "2024",
+        "sameAs": [
+          "https://www.facebook.com/groups/981598013945421",
+          "https://www.instagram.com/magerlygrowingtogether"
+        ]
       },
       {
         "@type": "SoftwareApplication",
-        "name": "Magerly - Baby Development Tracker",
-        "description": "Track your baby's growth milestones with development guidance for new parents",
-        "operatingSystem": ["iOS", "Android"],
+        "@id": "https://magerly.com/#app",
+        "name": "Magerly - Трекер развития и роста ребенка",
+        "description": "Отслеживайте достижения малыша с ежедневными советами экспертов, графиками роста и персональными рекомендациями по развитию",
+        "operatingSystem": ["iOS 15.0 or later", "Android 8.0 and up"],
         "applicationCategory": "HealthApplication",
-        "downloadUrl": ["https://apps.apple.com/app/magerly", "https://play.google.com/store/apps/details?id=com.magerly"],
+        "downloadUrl": [
+          "https://apps.apple.com/app/magerly/id6738126809",
+          "https://play.google.com/store/apps/details?id=com.xxdsv.GrowingTogether"
+        ],
+        "installUrl": [
+          "https://apps.apple.com/app/magerly/id6738126809",
+          "https://play.google.com/store/apps/details?id=com.xxdsv.GrowingTogether"
+        ],
         "offers": {
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "USD"
         },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "ratingCount": "150",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
         "author": {
           "@type": "Organization",
-          "@id": "#organization"
+          "@id": "https://magerly.com/#organization"
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "#organization"
+          "@id": "https://magerly.com/#organization"
         }
       },
       {
         "@type": "FAQPage",
+        "@id": "https://magerly.com/ru/#faq",
+        "inLanguage": "ru",
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Is Magerly free to use?",
+            "name": "Magerly бесплатно использовать?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, Magerly offers a robust free version with all essential tracking features. We also offer a premium subscription."
+              "text": "Да, Magerly предлагает надежную бесплатную версию со всеми необходимыми функциями отслеживания. Также доступна премиум-подписка."
             }
           },
           {
             "@type": "Question",
-            "name": "How accurate are the growth predictions?",
+            "name": "Насколько точны прогнозы роста?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Our predictions are based on WHO growth standards and peer-reviewed research. However, every baby develops at their own pace, and our app should complement, not replace, professional medical advice."
+              "text": "Прогнозы основаны на стандартах ВОЗ и проверенных исследованиях. Каждый малыш уникален, поэтому советы приложения дополняют, а не заменяют врачебные рекомендации."
             }
           },
           {
             "@type": "Question",
-            "name": "Is my baby's data secure and private?",
+            "name": "Безопасны ли данные моего ребенка?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, we take privacy seriously. All collected data is stored only on your device - we never store or transfer your data to external servers. We use AdMob for ads, but your baby's information stays with you. We never share personal information with third parties without your explicit consent."
+              "text": "Да. Все данные хранятся только на вашем устройстве — мы не отправляем их на внешние серверы. Реклама показывается через AdMob, но данные малыша не передаются третьим лицам без вашего согласия."
             }
           },
           {
             "@type": "Question",
-            "name": "Can I use Magerly if my baby is already a few months old?",
+            "name": "Можно ли начать, если малышу уже несколько месяцев?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Definitely. Just set your baby's birth date and Magerly will pick up right where you are, giving tips and support based on your child's current stage."
+              "text": "Конечно. Укажите дату рождения — и Magerly предложит рекомендации именно под текущий этап развития малыша."
             }
           },
           {
             "@type": "Question",
-            "name": "How is Magerly different from other parenting apps?",
+            "name": "Чем Magerly отличается от других приложений?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Unlike generic apps, Magerly offers calm, focused guidance. It doesn't overload you - just the right advice at the right moment, designed to gently support your journey through baby's early years."
+              "text": "В отличие от универсальных приложений, Magerly дает спокойные и точные подсказки — только то, что нужно, в нужный момент, чтобы поддержать вас в первые годы."
             }
           },
           {
             "@type": "Question",
-            "name": "Does Magerly replace visits to a pediatrician?",
+            "name": "Заменяет ли Magerly визиты к педиатру?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No - Magerly is a supportive tool, not a medical app. It offers daily tips and reminders based on typical development but should always be used alongside professional healthcare."
+              "text": "Нет. Это вспомогательный инструмент, а не медицинское приложение. Он предлагает ежедневные подсказки и напоминания, но не заменяет консультации специалистов."
             }
           },
           {
             "@type": "Question",
-            "name": "Is Magerly suitable for first-time parents?",
+            "name": "Подойдет ли Magerly для молодых родителей?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Absolutely! Magerly was created with first-time parents in mind. It guides you step by step with clear, daily tips and easy tasks, without overwhelming you with too much information."
+              "text": "Да! Magerly создан для тех, кто впервые проходит этот путь. Пошаговые, понятные подсказки и небольшие задачи без лишней перегрузки."
             }
           },
           {
             "@type": "Question",
-            "name": "What kind of advice does the app offer?",
+            "name": "Какие советы дает приложение?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "You'll receive expert-backed, science-based advice tailored to your baby's exact age - from bonding and play ideas to motor skills and sleep tips. Everything is short, sweet, and practical."
+              "text": "Вы получаете научно обоснованные рекомендации, адаптированные под точный возраст малыша: от идей игр и укрепления связи до моторики и сна. Коротко, по делу и полезно."
             }
           }
         ]
@@ -379,9 +414,9 @@
             Отслеживайте развитие вашего малыша с
             <span class="block text-yellow-300">Magerly</span>
           </h1>
-          <h2 class="text-xl lg:text-2xl mb-8 text-primary-100 leading-relaxed font-light">
+          <p class="text-xl lg:text-2xl mb-8 text-primary-100 leading-relaxed font-light">
             Умное приложение для родителей: отслеживайте достижения, здоровье и развитие без лишней суеты.
-          </h2>
+          </p>
           
           <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
             <div class="app-store-buttons flex flex-col sm:flex-row gap-3">
@@ -828,23 +863,23 @@
             <div id="carousel-track" class="flex transition-transform duration-500 ease-out h-full" style="transform: translateX(0%);">
               <!-- Slide 1 -->
               <div class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 h-full flex items-center justify-center p-2">
-                <img src="../assets/images/1-ru.jpg" alt="Get daily expert tips - Magerly app showing age tracking and milestone information" class="h-full object-contain" loading="lazy">
+                <img src="../assets/images/1-ru.jpg" alt="Ежедневные советы экспертов - приложение Magerly с отслеживанием возраста и достижений" class="h-full object-contain" loading="lazy">
               </div>
               <!-- Slide 2 -->
               <div class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 h-full flex items-center justify-center p-2">
-                <img src="../assets/images/2-ru.jpg" alt="Track growth milestones - Magerly app interface" class="h-full object-contain" loading="lazy">
+                <img src="../assets/images/2-ru.jpg" alt="Отслеживание вех развития - интерфейс приложения Magerly" class="h-full object-contain" loading="lazy">
               </div>
               <!-- Slide 3 -->
               <div class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 h-full flex items-center justify-center p-2">
-                <img src="../assets/images/3-ru.jpg" alt="Memory timeline - Save precious moments with Magerly" class="h-full object-contain" loading="lazy">
+                <img src="../assets/images/3-ru.jpg" alt="Хроника воспоминаний - сохраняйте важные моменты с Magerly" class="h-full object-contain" loading="lazy">
               </div>
               <!-- Slide 4 -->
               <div class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 h-full flex items-center justify-center p-2">
-                <img src="../assets/images/4-ru.jpg" alt="Personalized recommendations - Magerly app insights" class="h-full object-contain" loading="lazy">
+                <img src="../assets/images/4-ru.jpg" alt="Персональные рекомендации - аналитика приложения Magerly" class="h-full object-contain" loading="lazy">
               </div>
               <!-- Slide 5 -->
               <div class="carousel-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 h-full flex items-center justify-center p-2">
-                <img src="../assets/images/5-ru.jpg" alt="Health tracking - Monitor your baby's development" class="h-full object-contain" loading="lazy">
+                <img src="../assets/images/5-ru.jpg" alt="Отслеживание здоровья - мониторинг развития малыша" class="h-full object-contain" loading="lazy">
               </div>
             </div>
           </div>
@@ -1219,7 +1254,7 @@
       </div>
       
       <div class="border-t border-gray-800 text-center text-sm text-gray-400">
-        <p>© 2025 Magerly. Все права защищены.</p>
+        <p>© 2026 Magerly. Все права защищены.</p>
       </div>
     </div>
   </footer>

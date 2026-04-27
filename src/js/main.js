@@ -2,7 +2,7 @@
 
 // App configuration
 const CONFIG = {
-  appStoreUrl: 'https://apps.apple.com/app/magerly/id6738602349',
+  appStoreUrl: 'https://apps.apple.com/app/magerly/id6738126809',
   playStoreUrl: 'https://play.google.com/store/apps/details?id=com.xxdsv.GrowingTogether',
   apiBaseUrl: window.location.hostname === 'localhost' 
     ? 'http://localhost:3000/api' 
@@ -256,7 +256,7 @@ function initSmartAppStoreButtons(platform) {
   if (!iosBtn || !androidBtn || !genericBtn) return;
   
   // App Store URLs
-  const IOS_APP_URL = 'https://apps.apple.com/app/magerly/id6738602349';
+  const IOS_APP_URL = 'https://apps.apple.com/app/magerly/id6738126809';
   const ANDROID_APP_URL = 'https://play.google.com/store/apps/details?id=com.xxdsv.GrowingTogether';
   
   // Add click handlers to open app stores with enhanced tracking

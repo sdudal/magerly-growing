@@ -36,7 +36,13 @@ jobs:
         test -f dist/index.html
         test -f dist/privacy.html
         test -f dist/terms.html
+        test -f dist/404.html
         test -f dist/app-ads.txt
+        test -f dist/sitemap.xml
+        test -f dist/robots.txt
+        test -f dist/og-preview.png
+        test -f dist/twitter-card.png
+        test -f dist/ru/index.html
     
     - name: Validate Infrastructure Templates
       run: |

@@ -346,8 +346,23 @@ sync_website() {
     
     log_info "Syncing website files to S3 bucket: $bucket_name"
     
-    # Sync all files to S3
-    aws s3 sync "$dist_dir" "s3://$bucket_name" --delete
+    # Sync all files to S3 (excludes files that need explicit content-type)
+    aws s3 sync "$dist_dir" "s3://$bucket_name" --delete \
+        --exclude "*.xml" --exclude "*.json"
+    
+    # Upload XML files with explicit Content-Type (fixes CloudFront serving issues)
+    if compgen -G "$dist_dir/*.xml" > /dev/null; then
+        aws s3 cp "$dist_dir/" "s3://$bucket_name/" --recursive \
+            --exclude "*" --include "*.xml" \
+            --content-type "application/xml"
+    fi
+    
+    # Upload JSON files with explicit Content-Type
+    if compgen -G "$dist_dir/*.json" > /dev/null; then
+        aws s3 cp "$dist_dir/" "s3://$bucket_name/" --recursive \
+            --exclude "*" --include "*.json" \
+            --content-type "application/json"
+    fi
     
     log_success "Website files synced successfully"
     

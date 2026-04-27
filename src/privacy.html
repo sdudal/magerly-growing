@@ -2,28 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <script>
-    // Language detection and redirect
-    (function() {
-      // Check if already on a language-specific path
-      const currentPath = window.location.pathname;
-      if (currentPath.startsWith('/ru/') || currentPath.startsWith('/en/')) {
-        return; // Already on language-specific path
-      }
-      
-      // Get browser language
-      const browserLang = navigator.language || navigator.userLanguage;
-      const langCode = browserLang.split('-')[0].toLowerCase();
-      
-      // Check if Russian and not on /ru path
-      if (langCode === 'ru' && !currentPath.includes('/ru')) {
-        const newPath = currentPath === '/' ? '/ru/' : '/ru' + currentPath;
-        window.location.href = newPath;
-      }
-    })();
-  </script>
-
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy - Magerly Baby Development App</title>
   
@@ -33,12 +11,16 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://magerly.com/privacy.html">
   
+  <!-- Hreflang for multilingual SEO -->
+  <link rel="alternate" hreflang="en" href="https://magerly.com/privacy.html" />
+  <link rel="alternate" hreflang="ru" href="https://magerly.com/ru/privacy.html" />
+  
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://magerly.com/privacy.html">
   <meta property="og:title" content="Privacy Policy - Magerly Baby Development App">
   <meta property="og:description" content="Learn how Magerly protects your baby's data and your privacy. Transparent privacy practices for peace of mind.">
-  <meta property="og:image" content="https://magerly.com/og-preview.svg">
+  <meta property="og:image" content="https://magerly.com/og-preview.png">
   <meta property="og:image:alt" content="Magerly - Baby development tracking app with expert-backed milestone tracking">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -49,7 +31,7 @@
   <meta property="twitter:url" content="https://magerly.com/privacy.html">
   <meta property="twitter:title" content="Privacy Policy - Magerly Baby Development App">
   <meta property="twitter:description" content="Learn how Magerly protects your baby's data and your privacy. Transparent privacy practices for peace of mind.">
-  <meta property="twitter:image" content="https://magerly.com/twitter-card.svg">
+  <meta property="twitter:image" content="https://magerly.com/twitter-card.png">
   <meta property="twitter:image:alt" content="Magerly baby tracking app - 4.8 rating, 10,000+ families">
   <meta name="twitter:creator" content="@magerly">
   

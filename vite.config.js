@@ -11,6 +11,7 @@ export default defineConfig({
         main: resolve(__dirname, 'src/index.html'),
         privacy: resolve(__dirname, 'src/privacy.html'),
         terms: resolve(__dirname, 'src/terms.html'),
+        404: resolve(__dirname, 'src/404.html'),
         'ru/index': resolve(__dirname, 'src/ru/index.html'),
         'ru/privacy': resolve(__dirname, 'src/ru/privacy.html'),
         'ru/terms': resolve(__dirname, 'src/ru/terms.html')

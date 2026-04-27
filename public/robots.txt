@@ -5,6 +5,7 @@ Allow: /
 Allow: /index.html
 Allow: /privacy.html
 Allow: /terms.html
+Allow: /ru/
 
 # Block potential admin or sensitive areas
 Disallow: /admin/
@@ -14,6 +15,3 @@ Disallow: /node_modules/
 
 # Sitemap location
 Sitemap: https://magerly.com/sitemap.xml
-
-# Crawl delay for respectful crawling
-Crawl-delay: 1

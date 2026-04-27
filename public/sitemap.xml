@@ -1,65 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-<!-- Homepage - Highest Priority -->
+<!-- English Homepage -->
 <url>
   <loc>https://magerly.com/</loc>
-  <lastmod>2024-09-28</lastmod>
+  <lastmod>2026-04-26</lastmod>
   <changefreq>weekly</changefreq>
   <priority>1.0</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/" />
 </url>
 
-<!-- Main Landing Page -->
+<!-- Russian Homepage -->
 <url>
-  <loc>https://magerly.com/index.html</loc>
-  <lastmod>2024-09-28</lastmod>
+  <loc>https://magerly.com/ru/</loc>
+  <lastmod>2026-04-26</lastmod>
   <changefreq>weekly</changefreq>
   <priority>1.0</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/" />
 </url>
 
-<!-- Privacy Policy -->
+<!-- English Privacy Policy -->
 <url>
   <loc>https://magerly.com/privacy.html</loc>
-  <lastmod>2024-09-28</lastmod>
+  <lastmod>2026-04-26</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.6</priority>
+  <priority>0.4</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/privacy.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/privacy.html" />
 </url>
 
-<!-- Terms of Service -->
+<!-- Russian Privacy Policy -->
+<url>
+  <loc>https://magerly.com/ru/privacy.html</loc>
+  <lastmod>2026-04-26</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.4</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/privacy.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/privacy.html" />
+</url>
+
+<!-- English Terms of Service -->
 <url>
   <loc>https://magerly.com/terms.html</loc>
-  <lastmod>2024-09-28</lastmod>
+  <lastmod>2026-04-26</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.6</priority>
+  <priority>0.4</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/terms.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/terms.html" />
 </url>
 
-<!-- Section-specific URLs for better indexing -->
+<!-- Russian Terms of Service -->
 <url>
-  <loc>https://magerly.com/#features</loc>
-  <lastmod>2024-09-28</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://magerly.com/#age-calculator</loc>
-  <lastmod>2024-09-28</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.7</priority>
-</url>
-
-<url>
-  <loc>https://magerly.com/#testimonials</loc>
-  <lastmod>2024-09-28</lastmod>
+  <loc>https://magerly.com/ru/terms.html</loc>
+  <lastmod>2026-04-26</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
-</url>
-
-<url>
-  <loc>https://magerly.com/#faq</loc>
-  <lastmod>2024-09-28</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
+  <priority>0.4</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/terms.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/terms.html" />
 </url>
 
 </urlset>

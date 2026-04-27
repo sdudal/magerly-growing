@@ -55,7 +55,7 @@
   
   <!-- Bottom Text -->
   <text x="600" y="570" font-size="20" font-family="Arial, sans-serif" fill="#e0e7ff" text-anchor="middle">
-    Available on iOS & Android
+    Available on iOS &amp; Android
   </text>
 </svg>
 

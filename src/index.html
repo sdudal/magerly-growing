@@ -2,78 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <script>
-    // Language detection and redirect
-    (function() {
-
-        // Check if already on a language-specific path
-        const currentPath = window.location.pathname;
-        if (currentPath.startsWith('/ru/') || currentPath.startsWith('/fr/') || 
-            currentPath.startsWith('/de/') || currentPath.startsWith('/es/') || 
-            currentPath.startsWith('/tr/') || currentPath.startsWith('/pl/')) {
-          return; // Already on language-specific path
-        }
-
-      // Check if user has already selected a language (stored in localStorage)
-      const langCode = localStorage.getItem('magerly_language');
-      if (langCode ) {
-      } else {
-        // Get browser language
-        const browserLang = navigator.language || navigator.userLanguage;
-        const langCode = browserLang.split('-')[0].toLowerCase();
-      }
-      // Map of supported languages to their paths
-      const languageMap = {
-        'ru': '/ru/index.html',           // Russian
-        // 'fr': '/fr/',        // French (not yet implemented)
-        // 'de': '/de/',        // German (not yet implemented)
-        // 'es': '/es/',        // Spanish (not yet implemented)
-        // 'tr': '/tr/',        // Turkish (not yet implemented)
-        // 'pl': '/pl/',        // Polish (not yet implemented)
-        'en': '/'               // English (default)
-      };
-      
-      // Redirect to appropriate language if supported
-      console.log(languageMap[langCode])
-      console.log(currentPath)
-      if (languageMap[langCode] && languageMap[langCode] !== currentPath) {
-        const newPath = languageMap[langCode];
-        window.location.href = newPath;
-      }
-      
-      // If we stay on this page, save the language preference
-      if (currentPath === '/' || currentPath === '/index.html') {
-        localStorage.setItem('magerly_language', 'en');
-      }
-    })();
-  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Magerly - Your Baby's Growth Companion</title>
+  <title>Baby Milestone Tracker & Growth App | Magerly - Free for iOS & Android</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Track your baby's growth milestones with Magerly. Development tracking for new parents. Download free on iOS & Android.">
-  <meta name="keywords" content="baby development app, baby milestone tracker, baby growth app, parenting app for newborns, infant development tracker, baby development calendar app">
+  <meta name="description" content="Track your baby's milestones, growth charts & development with daily expert tips. Free baby tracker app trusted by 300+ parents worldwide. Download for iOS & Android.">
+  <meta name="keywords" content="baby milestone tracker, baby development app, baby growth tracker, baby growth chart app, parenting app for newborns, infant development tracker, baby age calculator, toddler milestone tracker">
   <meta name="author" content="Magerly">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://magerly.com/">
   
+  <!-- Hreflang for multilingual SEO -->
+  <link rel="alternate" hreflang="en" href="https://magerly.com/" />
+  <link rel="alternate" hreflang="ru" href="https://magerly.com/ru/" />
+  <link rel="alternate" hreflang="x-default" href="https://magerly.com/" />
+  
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://magerly.com/">
-  <meta property="og:title" content="Magerly - Your Baby's Growth Companion">
-  <meta property="og:description" content="Track your baby's growth milestones with Magerly - the intelligent mobile app designed for new parents.">
-  <meta property="og:image" content="https://magerly.com/og-preview.svg">
+  <meta property="og:title" content="Baby Milestone Tracker & Growth App | Magerly">
+  <meta property="og:description" content="Track your baby's milestones, growth charts & development with daily expert tips. Free app trusted by 300+ parents.">
+  <meta property="og:image" content="https://magerly.com/og-preview.png">
   <meta property="og:image:alt" content="Magerly - Baby development tracking app with milestone tracking">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Magerly">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ru_RU">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://magerly.com/">
-  <meta property="twitter:title" content="Magerly - Your Baby's Growth Companion">
-  <meta property="twitter:description" content="Track your baby's growth milestones with Magerly - the intelligent mobile app designed for new parents.">
-  <meta property="twitter:image" content="https://magerly.com/twitter-card.svg">
+  <meta property="twitter:title" content="Baby Milestone Tracker & Growth App | Magerly">
+  <meta property="twitter:description" content="Track your baby's milestones, growth charts & development with daily expert tips. Free app trusted by 300+ parents.">
+  <meta property="twitter:image" content="https://magerly.com/twitter-card.png">
   <meta property="twitter:image:alt" content="Magerly baby tracking app - 300+ parents, 7 languages">
   <meta name="twitter:creator" content="@magerly">
 
@@ -176,40 +138,74 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://magerly.com/#website",
+        "url": "https://magerly.com",
+        "name": "Magerly",
+        "description": "Baby milestone tracker and growth app for new parents",
+        "inLanguage": ["en", "ru"],
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://magerly.com/#organization"
+        }
+      },
+      {
         "@type": "Organization",
+        "@id": "https://magerly.com/#organization",
         "name": "Magerly",
         "url": "https://magerly.com",
-        "logo": "https://magerly.com/assets/images/icon.png",
-        "description": "Baby development tracking app for new parents",
-        "founder": {
-          "@type": "Person",
-          "name": "Magerly Team"
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://magerly.com/assets/images/icon.png",
+          "width": 512,
+          "height": 512
         },
-        "foundingDate": "2024"
+        "description": "Baby development tracking app for new parents",
+        "foundingDate": "2024",
+        "sameAs": [
+          "https://www.facebook.com/groups/981598013945421",
+          "https://www.instagram.com/magerlygrowingtogether"
+        ]
       },
       {
         "@type": "SoftwareApplication",
-        "name": "Magerly - Baby Development Tracker",
-        "description": "Track your baby's growth milestones with development guidance for new parents",
-        "operatingSystem": ["iOS", "Android"],
+        "@id": "https://magerly.com/#app",
+        "name": "Magerly - Baby Milestone Tracker & Growth App",
+        "description": "Track your baby's growth milestones with daily expert tips, growth charts, and personalized development guidance for new parents",
+        "operatingSystem": ["iOS 15.0 or later", "Android 8.0 and up"],
         "applicationCategory": "HealthApplication",
-        "downloadUrl": ["https://apps.apple.com/app/magerly", "https://play.google.com/store/apps/details?id=com.magerly"],
+        "downloadUrl": [
+          "https://apps.apple.com/app/magerly/id6738126809",
+          "https://play.google.com/store/apps/details?id=com.xxdsv.GrowingTogether"
+        ],
+        "installUrl": [
+          "https://apps.apple.com/app/magerly/id6738126809",
+          "https://play.google.com/store/apps/details?id=com.xxdsv.GrowingTogether"
+        ],
         "offers": {
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "USD"
         },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "ratingCount": "150",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
         "author": {
           "@type": "Organization",
-          "@id": "#organization"
+          "@id": "https://magerly.com/#organization"
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "#organization"
+          "@id": "https://magerly.com/#organization"
         }
       },
       {
         "@type": "FAQPage",
+        "@id": "https://magerly.com/#faq",
         "mainEntity": [
           {
             "@type": "Question",
@@ -417,9 +413,9 @@
             Track Your Baby's Growth with
             <span class="block text-yellow-300">Magerly</span>
           </h1>
-          <h2 class="text-xl lg:text-2xl mb-8 text-primary-100 leading-relaxed font-light">
+          <p class="text-xl lg:text-2xl mb-8 text-primary-100 leading-relaxed font-light">
             The intelligent mobile app designed for new parents to monitor milestones, health, and development.
-          </h2>
+          </p>
           
           <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
             <div class="app-store-buttons flex flex-col sm:flex-row gap-3">
@@ -1268,7 +1264,7 @@
       
       <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
         <p class="text-gray-400 text-sm" data-copyright-year>
-          © 2024 Magerly. All rights reserved.
+          © 2026 Magerly. All rights reserved.
         </p>
         <p class="text-gray-400 text-sm mt-4 md:mt-0">
           Made with ❤️ for parents everywhere
