@@ -6,6 +6,8 @@ Allow: /index.html
 Allow: /privacy.html
 Allow: /terms.html
 Allow: /ru/
+Allow: /blog/
+Allow: /ru/blog/
 
 # Block potential admin or sensitive areas
 Disallow: /admin/

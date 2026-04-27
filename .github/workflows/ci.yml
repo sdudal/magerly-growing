@@ -43,6 +43,24 @@ jobs:
         test -f dist/og-preview.png
         test -f dist/twitter-card.png
         test -f dist/ru/index.html
+        test -f dist/blog/index.html
+        test -f dist/blog/baby-walking-milestones.html
+        test -f dist/blog/baby-growth-chart-percentiles.html
+        test -f dist/blog/first-year-milestones-month-by-month.html
+        test -f dist/blog/how-to-track-baby-growth.html
+        test -f dist/blog/baby-sleep-schedule-by-age.html
+        test -f dist/blog/baby-talking-language-development.html
+        test -f dist/blog/baby-nutrition-breastfeeding-guide.html
+        test -f dist/blog/baby-teething-timeline.html
+        test -f dist/ru/blog/index.html
+        test -f dist/blog/tummy-time-guide.html
+        test -f dist/blog/baby-bath-safety.html
+        test -f dist/blog/postpartum-recovery-guide.html
+        test -f dist/blog/best-developmental-toys-by-age.html
+        test -f dist/blog/baby-vaccination-schedule.html
+        test -f dist/blog/potty-training-readiness-signs.html
+        test -f dist/ru/blog/index.html
+        test -f dist/ru/blog/baby-walking-milestones.html
     
     - name: Validate Infrastructure Templates
       run: |

@@ -66,4 +66,278 @@
   <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/terms.html" />
 </url>
 
+<!-- English Blog Listing -->
+<url>
+  <loc>https://magerly.com/blog/</loc>
+  <lastmod>2026-04-27</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/" />
+</url>
+
+<!-- Russian Blog Listing -->
+<url>
+  <loc>https://magerly.com/ru/blog/</loc>
+  <lastmod>2026-04-27</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/" />
+</url>
+
+<!-- Blog: Baby Walking Milestones -->
+<url>
+  <loc>https://magerly.com/blog/baby-walking-milestones.html</loc>
+  <lastmod>2026-04-25</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-walking-milestones.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-walking-milestones.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/baby-walking-milestones.html</loc>
+  <lastmod>2026-04-25</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-walking-milestones.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-walking-milestones.html" />
+</url>
+
+<!-- Blog: Baby Growth Chart Percentiles -->
+<url>
+  <loc>https://magerly.com/blog/baby-growth-chart-percentiles.html</loc>
+  <lastmod>2026-04-23</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-growth-chart-percentiles.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-growth-chart-percentiles.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/baby-growth-chart-percentiles.html</loc>
+  <lastmod>2026-04-23</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-growth-chart-percentiles.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-growth-chart-percentiles.html" />
+</url>
+
+<!-- Blog: First Year Milestones -->
+<url>
+  <loc>https://magerly.com/blog/first-year-milestones-month-by-month.html</loc>
+  <lastmod>2026-04-20</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/first-year-milestones-month-by-month.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/first-year-milestones-month-by-month.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/first-year-milestones-month-by-month.html</loc>
+  <lastmod>2026-04-20</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/first-year-milestones-month-by-month.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/first-year-milestones-month-by-month.html" />
+</url>
+
+<!-- Blog: How to Track Baby Growth -->
+<url>
+  <loc>https://magerly.com/blog/how-to-track-baby-growth.html</loc>
+  <lastmod>2026-04-18</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/how-to-track-baby-growth.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/how-to-track-baby-growth.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/how-to-track-baby-growth.html</loc>
+  <lastmod>2026-04-18</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/how-to-track-baby-growth.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/how-to-track-baby-growth.html" />
+</url>
+
+<!-- Blog: Baby Sleep Schedule -->
+<url>
+  <loc>https://magerly.com/blog/baby-sleep-schedule-by-age.html</loc>
+  <lastmod>2026-04-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-sleep-schedule-by-age.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-sleep-schedule-by-age.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/baby-sleep-schedule-by-age.html</loc>
+  <lastmod>2026-04-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-sleep-schedule-by-age.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-sleep-schedule-by-age.html" />
+</url>
+
+<!-- Blog: Baby Talking Language Development -->
+<url>
+  <loc>https://magerly.com/blog/baby-talking-language-development.html</loc>
+  <lastmod>2026-04-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-talking-language-development.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-talking-language-development.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/baby-talking-language-development.html</loc>
+  <lastmod>2026-04-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-talking-language-development.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-talking-language-development.html" />
+</url>
+
+<!-- Blog: Baby Nutrition Breastfeeding -->
+<url>
+  <loc>https://magerly.com/blog/baby-nutrition-breastfeeding-guide.html</loc>
+  <lastmod>2026-04-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-nutrition-breastfeeding-guide.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-nutrition-breastfeeding-guide.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/baby-nutrition-breastfeeding-guide.html</loc>
+  <lastmod>2026-04-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-nutrition-breastfeeding-guide.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-nutrition-breastfeeding-guide.html" />
+</url>
+
+<!-- Blog: Baby Teething Timeline -->
+<url>
+  <loc>https://magerly.com/blog/baby-teething-timeline.html</loc>
+  <lastmod>2026-04-08</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-teething-timeline.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-teething-timeline.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/baby-teething-timeline.html</loc>
+  <lastmod>2026-04-08</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-teething-timeline.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-teething-timeline.html" />
+</url>
+
+<!-- Blog: Tummy Time Guide -->
+<url>
+  <loc>https://magerly.com/blog/tummy-time-guide.html</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/tummy-time-guide.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/tummy-time-guide.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/tummy-time-guide.html</loc>
+  <lastmod>2026-04-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/tummy-time-guide.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/tummy-time-guide.html" />
+</url>
+
+<!-- Blog: Baby Bath Safety -->
+<url>
+  <loc>https://magerly.com/blog/baby-bath-safety.html</loc>
+  <lastmod>2026-04-03</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-bath-safety.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-bath-safety.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/baby-bath-safety.html</loc>
+  <lastmod>2026-04-03</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-bath-safety.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-bath-safety.html" />
+</url>
+
+<!-- Blog: Postpartum Recovery Guide -->
+<url>
+  <loc>https://magerly.com/blog/postpartum-recovery-guide.html</loc>
+  <lastmod>2026-04-01</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/postpartum-recovery-guide.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/postpartum-recovery-guide.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/postpartum-recovery-guide.html</loc>
+  <lastmod>2026-04-01</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/postpartum-recovery-guide.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/postpartum-recovery-guide.html" />
+</url>
+
+<!-- Blog: Best Developmental Toys -->
+<url>
+  <loc>https://magerly.com/blog/best-developmental-toys-by-age.html</loc>
+  <lastmod>2026-03-28</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/best-developmental-toys-by-age.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/best-developmental-toys-by-age.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/best-developmental-toys-by-age.html</loc>
+  <lastmod>2026-03-28</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/best-developmental-toys-by-age.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/best-developmental-toys-by-age.html" />
+</url>
+
+<!-- Blog: Baby Vaccination Schedule -->
+<url>
+  <loc>https://magerly.com/blog/baby-vaccination-schedule.html</loc>
+  <lastmod>2026-03-25</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-vaccination-schedule.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-vaccination-schedule.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/baby-vaccination-schedule.html</loc>
+  <lastmod>2026-03-25</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-vaccination-schedule.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-vaccination-schedule.html" />
+</url>
+
+<!-- Blog: Potty Training Readiness -->
+<url>
+  <loc>https://magerly.com/blog/potty-training-readiness-signs.html</loc>
+  <lastmod>2026-03-22</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/potty-training-readiness-signs.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/potty-training-readiness-signs.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/potty-training-readiness-signs.html</loc>
+  <lastmod>2026-03-22</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/potty-training-readiness-signs.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/potty-training-readiness-signs.html" />
+</url>
+
 </urlset>
