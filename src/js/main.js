@@ -1237,28 +1237,64 @@ class NavigationController {
   
   initScrollEffects() {
     if (!this.header) return;
-    
+
     window.addEventListener('scroll', () => {
       const currentScrollY = window.scrollY;
-      
-      // Add scrolled styling when scrolled
+
       if (currentScrollY > 10) {
         this.header.classList.add('header-scrolled');
       } else {
         this.header.classList.remove('header-scrolled');
       }
-      
-      // Update active navigation item based on scroll position
-      this.updateActiveNavOnScroll();
-      
+
       this.lastScrollY = currentScrollY;
-    });
+    }, { passive: true });
+
+    this.initActiveNavObserver();
   }
-  
+
+  initActiveNavObserver() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+    if (sections.length === 0 || navLinks.length === 0) return;
+
+    const navLinkMap = new Map();
+    navLinks.forEach(link => {
+      const id = link.getAttribute('href')?.substring(1);
+      if (id) navLinkMap.set(id, link);
+    });
+
+    const headerHeight = this.header ? this.header.offsetHeight : 0;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          const id = entry.target.getAttribute('id');
+          const link = navLinkMap.get(id);
+          if (!link) return;
+
+          if (entry.isIntersecting) {
+            navLinks.forEach(l => {
+              l.classList.remove('text-primary-600');
+              l.removeAttribute('aria-current');
+            });
+            link.classList.add('text-primary-600');
+            link.setAttribute('aria-current', 'location');
+          }
+        });
+      },
+      {
+        rootMargin: `-${headerHeight + 20}px 0px -60% 0px`,
+        threshold: 0
+      }
+    );
+
+    sections.forEach(section => observer.observe(section));
+  }
+
   initKeyboardNavigation() {
-    // Add keyboard support for all navigation links
     const navLinks = document.querySelectorAll('nav a');
-    
+
     navLinks.forEach(link => {
       link.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
@@ -1266,33 +1302,6 @@ class NavigationController {
           link.click();
         }
       });
-    });
-  }
-  
-  updateActiveNavOnScroll() {
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('nav a[href^="#"]');
-    
-    let current = '';
-    const scrollPosition = window.scrollY + 150; // Offset for header
-    
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-      
-      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-        current = section.getAttribute('id');
-      }
-    });
-    
-    navLinks.forEach(link => {
-      link.classList.remove('text-primary-600');
-      link.removeAttribute('aria-current');
-      
-      if (link.getAttribute('href') === `#${current}`) {
-        link.classList.add('text-primary-600');
-        link.setAttribute('aria-current', 'location');
-      }
     });
   }
 }

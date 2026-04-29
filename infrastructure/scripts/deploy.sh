@@ -345,25 +345,37 @@ sync_website() {
     fi
     
     log_info "Syncing website files to S3 bucket: $bucket_name"
-    
-    # Sync all files to S3 (excludes files that need explicit content-type)
+
+    # 1) Hashed assets (JS, CSS, images, fonts) — immutable, 1-year cache
+    log_info "Uploading hashed assets with long-term cache..."
+    aws s3 sync "$dist_dir/assets" "s3://$bucket_name/assets" --delete \
+        --cache-control "public, max-age=31536000, immutable"
+
+    # 2) HTML pages — always revalidate so deploys take effect immediately
+    log_info "Uploading HTML pages..."
     aws s3 sync "$dist_dir" "s3://$bucket_name" --delete \
-        --exclude "*.xml" --exclude "*.json"
-    
-    # Upload XML files with explicit Content-Type (fixes CloudFront serving issues)
+        --exclude "assets/*" \
+        --exclude "*.xml" --exclude "*.json" \
+        --cache-control "public, max-age=0, must-revalidate"
+
+    # 3) XML files (sitemap, etc.) with correct Content-Type and moderate cache
     if compgen -G "$dist_dir/*.xml" > /dev/null; then
+        log_info "Uploading XML files..."
         aws s3 cp "$dist_dir/" "s3://$bucket_name/" --recursive \
             --exclude "*" --include "*.xml" \
-            --content-type "application/xml"
+            --content-type "application/xml" \
+            --cache-control "public, max-age=3600"
     fi
-    
-    # Upload JSON files with explicit Content-Type
+
+    # 4) JSON files with correct Content-Type and moderate cache
     if compgen -G "$dist_dir/*.json" > /dev/null; then
+        log_info "Uploading JSON files..."
         aws s3 cp "$dist_dir/" "s3://$bucket_name/" --recursive \
             --exclude "*" --include "*.json" \
-            --content-type "application/json"
+            --content-type "application/json" \
+            --cache-control "public, max-age=3600"
     fi
-    
+
     log_success "Website files synced successfully"
     
     # Get CloudFront distribution ID and create invalidation
