@@ -69,7 +69,7 @@
 <!-- English Blog Listing -->
 <url>
   <loc>https://magerly.com/blog/</loc>
-  <lastmod>2026-04-27</lastmod>
+  <lastmod>2026-06-17</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
   <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/" />
@@ -80,12 +80,222 @@
 <!-- Russian Blog Listing -->
 <url>
   <loc>https://magerly.com/ru/blog/</loc>
-  <lastmod>2026-04-27</lastmod>
+  <lastmod>2026-06-17</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
   <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/" />
   <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/" />
   <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/" />
+</url>
+
+
+<!-- Blog: Baby Fine Motor Skills Guide -->
+<url>
+  <loc>https://magerly.com/blog/baby-fine-motor-skills.html</loc>
+  <lastmod>2026-06-17</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-fine-motor-skills.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-fine-motor-skills.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-fine-motor-skills.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/baby-fine-motor-skills.html</loc>
+  <lastmod>2026-06-17</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-fine-motor-skills.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-fine-motor-skills.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-fine-motor-skills.html" />
+</url>
+
+
+<!-- Blog: Sensory Play Ideas for Babies -->
+<url>
+  <loc>https://magerly.com/blog/sensory-play-ideas-for-babies.html</loc>
+  <lastmod>2026-06-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/sensory-play-ideas-for-babies.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/sensory-play-ideas-for-babies.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/sensory-play-ideas-for-babies.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/sensory-play-ideas-for-babies.html</loc>
+  <lastmod>2026-06-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/sensory-play-ideas-for-babies.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/sensory-play-ideas-for-babies.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/sensory-play-ideas-for-babies.html" />
+</url>
+
+
+<!-- Blog: Baby Vision Development -->
+<url>
+  <loc>https://magerly.com/blog/baby-vision-development.html</loc>
+  <lastmod>2026-06-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-vision-development.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-vision-development.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-vision-development.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/baby-vision-development.html</loc>
+  <lastmod>2026-06-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-vision-development.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-vision-development.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-vision-development.html" />
+</url>
+
+
+<!-- Blog: Baby Separation Anxiety Guide -->
+<url>
+  <loc>https://magerly.com/blog/baby-separation-anxiety-guide.html</loc>
+  <lastmod>2026-06-07</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-separation-anxiety-guide.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-separation-anxiety-guide.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-separation-anxiety-guide.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/baby-separation-anxiety-guide.html</loc>
+  <lastmod>2026-06-07</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-separation-anxiety-guide.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-separation-anxiety-guide.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-separation-anxiety-guide.html" />
+</url>
+
+
+<!-- Blog: Reading to Babies -->
+<url>
+  <loc>https://magerly.com/blog/reading-to-babies-language-development.html</loc>
+  <lastmod>2026-06-03</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/reading-to-babies-language-development.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/reading-to-babies-language-development.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/reading-to-babies-language-development.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/reading-to-babies-language-development.html</loc>
+  <lastmod>2026-06-03</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/reading-to-babies-language-development.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/reading-to-babies-language-development.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/reading-to-babies-language-development.html" />
+</url>
+
+
+<!-- Blog: Best Parenting Apps 2026 -->
+<url>
+  <loc>https://magerly.com/blog/best-parenting-apps-2026.html</loc>
+  <lastmod>2026-05-31</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/best-parenting-apps-2026.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/best-parenting-apps-2026.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/best-parenting-apps-2026.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/best-parenting-apps-2026.html</loc>
+  <lastmod>2026-05-31</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/best-parenting-apps-2026.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/best-parenting-apps-2026.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/best-parenting-apps-2026.html" />
+</url>
+
+
+<!-- Blog: Baby-Led Weaning Complete Guide -->
+<url>
+  <loc>https://magerly.com/blog/baby-led-weaning-complete-guide.html</loc>
+  <lastmod>2026-05-22</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-led-weaning-complete-guide.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-led-weaning-complete-guide.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-led-weaning-complete-guide.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/baby-led-weaning-complete-guide.html</loc>
+  <lastmod>2026-05-22</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-led-weaning-complete-guide.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-led-weaning-complete-guide.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-led-weaning-complete-guide.html" />
+</url>
+
+
+<!-- Blog: Baby Sleep Regression Guide -->
+<url>
+  <loc>https://magerly.com/blog/baby-sleep-regression-guide.html</loc>
+  <lastmod>2026-05-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-sleep-regression-guide.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-sleep-regression-guide.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-sleep-regression-guide.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/baby-sleep-regression-guide.html</loc>
+  <lastmod>2026-05-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-sleep-regression-guide.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-sleep-regression-guide.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-sleep-regression-guide.html" />
+</url>
+
+
+<!-- Blog: When Do Babies Start Crawling -->
+<url>
+  <loc>https://magerly.com/blog/when-do-babies-start-crawling.html</loc>
+  <lastmod>2026-05-03</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/when-do-babies-start-crawling.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/when-do-babies-start-crawling.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/when-do-babies-start-crawling.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/when-do-babies-start-crawling.html</loc>
+  <lastmod>2026-05-03</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/when-do-babies-start-crawling.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/when-do-babies-start-crawling.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/when-do-babies-start-crawling.html" />
+</url>
+
+
+<!-- Blog: Baby Rolling Over Milestones -->
+<url>
+  <loc>https://magerly.com/blog/baby-rolling-over-milestones.html</loc>
+  <lastmod>2026-04-26</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-rolling-over-milestones.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-rolling-over-milestones.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-rolling-over-milestones.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/baby-rolling-over-milestones.html</loc>
+  <lastmod>2026-04-26</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-rolling-over-milestones.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-rolling-over-milestones.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-rolling-over-milestones.html" />
 </url>
 
 <!-- Blog: Baby Walking Milestones -->
