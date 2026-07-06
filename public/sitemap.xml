@@ -69,7 +69,7 @@
 <!-- English Blog Listing -->
 <url>
   <loc>https://magerly.com/blog/</loc>
-  <lastmod>2026-06-17</lastmod>
+  <lastmod>2026-07-05</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
   <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/" />
@@ -80,7 +80,7 @@
 <!-- Russian Blog Listing -->
 <url>
   <loc>https://magerly.com/ru/blog/</loc>
-  <lastmod>2026-06-17</lastmod>
+  <lastmod>2026-07-05</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
   <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/" />
@@ -88,6 +88,106 @@
   <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/" />
 </url>
 
+
+<!-- Blog: Baby Daily Routine by Age -->
+<url>
+  <loc>https://magerly.com/blog/baby-daily-routine-by-age.html</loc>
+  <lastmod>2026-07-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-daily-routine-by-age.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-daily-routine-by-age.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-daily-routine-by-age.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/baby-daily-routine-by-age.html</loc>
+  <lastmod>2026-07-05</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-daily-routine-by-age.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-daily-routine-by-age.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-daily-routine-by-age.html" />
+</url>
+
+<!-- Blog: Safe Sleep Environment for Babies -->
+<url>
+  <loc>https://magerly.com/blog/baby-safe-sleep-environment.html</loc>
+  <lastmod>2026-07-01</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-safe-sleep-environment.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-safe-sleep-environment.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-safe-sleep-environment.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/baby-safe-sleep-environment.html</loc>
+  <lastmod>2026-07-01</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-safe-sleep-environment.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-safe-sleep-environment.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-safe-sleep-environment.html" />
+</url>
+
+<!-- Blog: Music and Movement Activities for Babies -->
+<url>
+  <loc>https://magerly.com/blog/baby-music-and-movement-activities.html</loc>
+  <lastmod>2026-06-27</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-music-and-movement-activities.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-music-and-movement-activities.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-music-and-movement-activities.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/baby-music-and-movement-activities.html</loc>
+  <lastmod>2026-06-27</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-music-and-movement-activities.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-music-and-movement-activities.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-music-and-movement-activities.html" />
+</url>
+
+<!-- Blog: Baby Social Smile Development -->
+<url>
+  <loc>https://magerly.com/blog/baby-social-smile-development.html</loc>
+  <lastmod>2026-06-24</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-social-smile-development.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-social-smile-development.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-social-smile-development.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/baby-social-smile-development.html</loc>
+  <lastmod>2026-06-24</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-social-smile-development.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-social-smile-development.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-social-smile-development.html" />
+</url>
+
+<!-- Blog: When Do Babies Sit Up? -->
+<url>
+  <loc>https://magerly.com/blog/when-do-babies-sit-up.html</loc>
+  <lastmod>2026-06-21</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/when-do-babies-sit-up.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/when-do-babies-sit-up.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/when-do-babies-sit-up.html" />
+</url>
+<url>
+  <loc>https://magerly.com/ru/blog/when-do-babies-sit-up.html</loc>
+  <lastmod>2026-06-21</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/when-do-babies-sit-up.html" />
+  <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/when-do-babies-sit-up.html" />
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/when-do-babies-sit-up.html" />
+</url>
 
 <!-- Blog: Baby Fine Motor Skills Guide -->
 <url>
