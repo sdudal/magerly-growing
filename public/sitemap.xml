@@ -69,7 +69,7 @@
 <!-- English Blog Listing -->
 <url>
   <loc>https://magerly.com/blog/</loc>
-  <lastmod>2026-07-05</lastmod>
+  <lastmod>2026-08-04</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
   <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/" />
@@ -80,7 +80,7 @@
 <!-- Russian Blog Listing -->
 <url>
   <loc>https://magerly.com/ru/blog/</loc>
-  <lastmod>2026-07-05</lastmod>
+  <lastmod>2026-08-04</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
   <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/" />
@@ -88,6 +88,206 @@
   <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/" />
 </url>
 
+
+  <url>
+    <loc>https://magerly.com/blog/screen-free-activities-for-babies.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/screen-free-activities-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/screen-free-activities-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/screen-free-activities-for-babies.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/screen-free-activities-for-babies.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/screen-free-activities-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/screen-free-activities-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/screen-free-activities-for-babies.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/blog/babyproofing-checklist-by-room.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/babyproofing-checklist-by-room.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/babyproofing-checklist-by-room.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/babyproofing-checklist-by-room.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/babyproofing-checklist-by-room.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/babyproofing-checklist-by-room.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/babyproofing-checklist-by-room.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/babyproofing-checklist-by-room.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/blog/baby-gestures-and-pointing.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-gestures-and-pointing.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-gestures-and-pointing.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-gestures-and-pointing.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/baby-gestures-and-pointing.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-gestures-and-pointing.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-gestures-and-pointing.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-gestures-and-pointing.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/blog/cause-and-effect-play-for-babies.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/cause-and-effect-play-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/cause-and-effect-play-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/cause-and-effect-play-for-babies.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/cause-and-effect-play-for-babies.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/cause-and-effect-play-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/cause-and-effect-play-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/cause-and-effect-play-for-babies.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/blog/object-permanence-games-for-babies.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/object-permanence-games-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/object-permanence-games-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/object-permanence-games-for-babies.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/object-permanence-games-for-babies.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/object-permanence-games-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/object-permanence-games-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/object-permanence-games-for-babies.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/blog/outdoor-activities-for-babies.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/outdoor-activities-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/outdoor-activities-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/outdoor-activities-for-babies.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/outdoor-activities-for-babies.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/outdoor-activities-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/outdoor-activities-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/outdoor-activities-for-babies.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/blog/baby-massage-guide.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-massage-guide.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-massage-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-massage-guide.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/baby-massage-guide.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-massage-guide.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-massage-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-massage-guide.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/blog/baby-diaper-rash-prevention.html</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-diaper-rash-prevention.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-diaper-rash-prevention.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-diaper-rash-prevention.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/baby-diaper-rash-prevention.html</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-diaper-rash-prevention.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-diaper-rash-prevention.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-diaper-rash-prevention.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/blog/starting-daycare-with-a-baby.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/starting-daycare-with-a-baby.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/starting-daycare-with-a-baby.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/starting-daycare-with-a-baby.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/starting-daycare-with-a-baby.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/starting-daycare-with-a-baby.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/starting-daycare-with-a-baby.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/starting-daycare-with-a-baby.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/blog/baby-first-tooth-care.html</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-first-tooth-care.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-first-tooth-care.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-first-tooth-care.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/baby-first-tooth-care.html</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-first-tooth-care.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-first-tooth-care.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-first-tooth-care.html" />
+  </url>
 
 <!-- Blog: Baby Daily Routine by Age -->
 <url>
