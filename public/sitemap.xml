@@ -69,7 +69,7 @@
 <!-- English Blog Listing -->
 <url>
   <loc>https://magerly.com/blog/</loc>
-  <lastmod>2026-08-04</lastmod>
+  <lastmod>2026-10-28</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
   <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/" />
@@ -80,7 +80,7 @@
 <!-- Russian Blog Listing -->
 <url>
   <loc>https://magerly.com/ru/blog/</loc>
-  <lastmod>2026-08-04</lastmod>
+  <lastmod>2026-10-28</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
   <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/" />
@@ -88,6 +88,261 @@
   <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/" />
 </url>
 
+
+  <url><loc>https://magerly.com/blog/preparing-toddler-for-new-baby.html</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/preparing-toddler-for-new-baby.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/preparing-toddler-for-new-baby.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/preparing-toddler-for-new-baby.html" />
+  </url>
+  <url><loc>https://magerly.com/ru/blog/preparing-toddler-for-new-baby.html</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/preparing-toddler-for-new-baby.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/preparing-toddler-for-new-baby.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/preparing-toddler-for-new-baby.html" />
+  </url>
+
+  <url><loc>https://magerly.com/blog/toddler-language-development-18-24-months.html</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/toddler-language-development-18-24-months.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/toddler-language-development-18-24-months.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/toddler-language-development-18-24-months.html" />
+  </url>
+  <url><loc>https://magerly.com/ru/blog/toddler-language-development-18-24-months.html</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/toddler-language-development-18-24-months.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/toddler-language-development-18-24-months.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/toddler-language-development-18-24-months.html" />
+  </url>
+
+  <url><loc>https://magerly.com/blog/toddler-picky-eating-guide.html</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/toddler-picky-eating-guide.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/toddler-picky-eating-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/toddler-picky-eating-guide.html" />
+  </url>
+  <url><loc>https://magerly.com/ru/blog/toddler-picky-eating-guide.html</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/toddler-picky-eating-guide.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/toddler-picky-eating-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/toddler-picky-eating-guide.html" />
+  </url>
+
+  <url><loc>https://magerly.com/blog/parallel-play-for-toddlers.html</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/parallel-play-for-toddlers.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/parallel-play-for-toddlers.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/parallel-play-for-toddlers.html" />
+  </url>
+  <url><loc>https://magerly.com/ru/blog/parallel-play-for-toddlers.html</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/parallel-play-for-toddlers.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/parallel-play-for-toddlers.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/parallel-play-for-toddlers.html" />
+  </url>
+
+  <url><loc>https://magerly.com/blog/toddler-tantrums-guide.html</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/toddler-tantrums-guide.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/toddler-tantrums-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/toddler-tantrums-guide.html" />
+  </url>
+  <url><loc>https://magerly.com/ru/blog/toddler-tantrums-guide.html</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/toddler-tantrums-guide.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/toddler-tantrums-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/toddler-tantrums-guide.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/blog/baby-first-shoes-guide.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-first-shoes-guide.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-first-shoes-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-first-shoes-guide.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/baby-first-shoes-guide.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-first-shoes-guide.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-first-shoes-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-first-shoes-guide.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/blog/traveling-with-a-baby.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/traveling-with-a-baby.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/traveling-with-a-baby.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/traveling-with-a-baby.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/traveling-with-a-baby.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/traveling-with-a-baby.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/traveling-with-a-baby.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/traveling-with-a-baby.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/blog/baby-carrier-safety.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-carrier-safety.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-carrier-safety.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-carrier-safety.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/baby-carrier-safety.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-carrier-safety.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-carrier-safety.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-carrier-safety.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/blog/high-chair-safety.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/high-chair-safety.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/high-chair-safety.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/high-chair-safety.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/high-chair-safety.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/high-chair-safety.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/high-chair-safety.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/high-chair-safety.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/blog/teaching-baby-to-drink-from-cup.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/teaching-baby-to-drink-from-cup.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/teaching-baby-to-drink-from-cup.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/teaching-baby-to-drink-from-cup.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/teaching-baby-to-drink-from-cup.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/teaching-baby-to-drink-from-cup.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/teaching-baby-to-drink-from-cup.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/teaching-baby-to-drink-from-cup.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/blog/baby-nap-transitions.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-nap-transitions.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-nap-transitions.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-nap-transitions.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/baby-nap-transitions.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-nap-transitions.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-nap-transitions.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-nap-transitions.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/blog/co-regulation-for-babies.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/co-regulation-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/co-regulation-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/co-regulation-for-babies.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/co-regulation-for-babies.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/co-regulation-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/co-regulation-for-babies.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/co-regulation-for-babies.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/blog/baby-overstimulation-signs.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-overstimulation-signs.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-overstimulation-signs.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-overstimulation-signs.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/baby-overstimulation-signs.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-overstimulation-signs.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-overstimulation-signs.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-overstimulation-signs.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/blog/baby-hearing-development.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-hearing-development.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-hearing-development.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-hearing-development.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/baby-hearing-development.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/baby-hearing-development.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/baby-hearing-development.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/baby-hearing-development.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/blog/newborn-bonding-activities.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/newborn-bonding-activities.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/newborn-bonding-activities.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/newborn-bonding-activities.html" />
+  </url>
+
+  <url>
+    <loc>https://magerly.com/ru/blog/newborn-bonding-activities.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magerly.com/blog/newborn-bonding-activities.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://magerly.com/ru/blog/newborn-bonding-activities.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magerly.com/blog/newborn-bonding-activities.html" />
+  </url>
 
   <url>
     <loc>https://magerly.com/blog/screen-free-activities-for-babies.html</loc>
